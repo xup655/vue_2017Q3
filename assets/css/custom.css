@@ -2,13 +2,26 @@
 body {
   font-family: "微軟正黑體"; }
 
+.container-fluid {
+  font-family: "標楷體"; }
+  @media screen and (min-width: 1200px) {
+    .container-fluid .menuzord-menu > li {
+      margin-left: 10px; }
+      .container-fluid .menuzord-menu > li > a {
+        font-size: 22px; } }
+  @media screen and (max-width: 991px) {
+    .container-fluid .logo-brand {
+      max-height: 80px; } }
+
 .menuzord-menu > li {
+  margin-left: 5px;
   line-height: 100px; }
   .menuzord-menu > li > .megamenu {
     line-height: 1; }
   .menuzord-menu > li > a {
     padding: 3px 5px;
-    line-height: 1; }
+    line-height: 1;
+    font-size: 18px; }
   .menuzord-menu > li:hover > a, .menuzord-menu > li.active > a {
     border-bottom: 1px solid #C6C6C6;
     color: #82645C; }
@@ -32,7 +45,7 @@ body {
     display: inline-block;
     margin: 0;
     position: relative;
-    font-size: 14px;
+    font-size: 13px;
     color: #A67F60; }
   #footer .social-link {
     clear: both;
@@ -79,6 +92,7 @@ body {
     text-align: center; }
   .page-title h4 {
     display: inline-block;
+    padding: 2px 25px;
     border-bottom: 1px solid #A48B78; }
 
 .pages_area {
@@ -117,6 +131,9 @@ body {
   margin: 30px auto 50px;
   width: 50%;
   line-height: 100px; }
+  @media screen and (min-width: 481px) and (max-width: 991px) {
+    .logo_menu_area {
+      margin-bottom: 100px; } }
   .logo_menu_area .logo {
     position: relative;
     width: 200px; }
@@ -176,12 +193,9 @@ body {
   background-position: left top;
   background-size: 50% auto;
   background-image: url("../images/index/img_smoke.jpg"); }
-  .post-parallax .section_title h4 {
-    display: inline-block;
-    padding: 0 3px;
-    border-bottom: 3px solid #9f9f9f;
-    font-size: 20px;
-    color: #303030; }
+  @media screen and (max-width: 767px) {
+    .post-parallax .section_title {
+      margin-top: 10px; } }
   .post-parallax .section_text {
     position: relative;
     padding: 0 50px; }
@@ -200,6 +214,8 @@ body {
       width: 80%;
       height: 20px;
       background: #906842; }
+  .post-parallax .section_title {
+    transform: translate(-50%, 0); }
   @media screen and (max-width: 767px) {
     .post-parallax {
       background-size: 100% auto; }
@@ -223,7 +239,10 @@ body {
   .section_lesson img {
     width: 100%; }
 
-.lesson_box .lesson_img {
+.lesson_box + .lesson_box {
+  border-left: 1px solid #D3D3D3; }
+
+.lesson_box .lesson_img img {
   border: 1px solid #7C6450;
   box-shadow: -3px -3px 0 #7C6450; }
 
@@ -234,9 +253,54 @@ body {
   color: #fff; }
 
 .group_area {
-  background-size: contain;
+  display: block;
+  position: relative;
+  background-size: auto 100%;
   background-repeat: no-repeat;
-  background-image: url("../images/index/img_pen.jpg"); }
+  background-image: url("../images/index/img_pen.jpg");
+  background-color: #fdfdff; }
+  .group_area .group_box h3 {
+    position: relative;
+    margin-bottom: 80px;
+    font-size: 26px; }
+    .group_area .group_box h3 span {
+      margin-left: 10px;
+      font-size: 18px; }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        .group_area .group_box h3 span {
+          margin: 0;
+          padding: 0; } }
+    .group_area .group_box h3:before {
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      width: 50px;
+      height: 2px;
+      background: #a6a6a6; }
+  .group_area .group_box img {
+    max-width: 100%; }
+  .group_area .group_box ul {
+    padding: 0 25px;
+    list-style: none;
+    text-align: left;
+    line-height: 2;
+    font-size: 20px; }
+    @media screen and (max-width: 991px) {
+      .group_area .group_box ul {
+        text-align: center; } }
+    .group_area .group_box ul:before {
+      content: attr(data-tit); }
+  .group_area .group_box .btn_more {
+    font-size: 16px;
+    color: #000; }
+  .group_area .white-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background: rgba(255, 255, 255, 0.5); }
 
 .portfolio-with-title.blog-m .portfolio-item .portfolio-title h4 {
   padding: 3px 5px;
@@ -260,34 +324,45 @@ body {
   .portfolio-with-title.blog-m .portfolio-item:nth-child(even) .portfolio-title h4 {
     text-align: left; }
 
-.blog-classic p {
-  color: #727171; }
-
-.blog-classic .blog-post .post_content {
-  margin: 0 auto;
-  width: 80%; }
-
-.blog-classic .blog-post .full-width {
-  margin-bottom: 0; }
-
-.blog-classic .post-meta li {
-  margin: 5px 0 0;
-  font-weight: bold;
-  color: #727171; }
-
-.portfolio-item .portfolio-hover {
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
+.blog-classic {
   border: 0; }
+  .blog-classic p {
+    color: #727171; }
+  .blog-classic .blog-post .post_content {
+    margin: 0 auto;
+    width: 80%; }
+  .blog-classic .blog-post .full-width {
+    margin-bottom: 0; }
+  .blog-classic .post-meta li {
+    margin: 10px 0 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #727171; }
 
-.portfolio-item:hover .portfolio-hover .portfolio-description {
-  top: 50%;
-  bottom: auto;
-  margin-bottom: 20px; }
+.portfolio.gutter.case_area:before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  width: 100px;
+  border-top: 3px solid #906842;
+  transform: translate(-50%, 0); }
 
-.portfolio-description h4 {
+.portfolio.gutter.case_area .portfolio-item {
+  margin-bottom: 20px;
+  padding: 20px; }
+  .portfolio.gutter.case_area .portfolio-item .portfolio-hover {
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border: 0; }
+  .portfolio.gutter.case_area .portfolio-item:hover .portfolio-hover .portfolio-description {
+    top: 50%;
+    bottom: auto;
+    margin-bottom: 20px; }
+
+.portfolio.gutter.case_area .portfolio-description h4 {
   font-size: 32px;
   font-weight: bold;
   color: #8D5747; }
