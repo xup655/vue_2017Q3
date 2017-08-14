@@ -107,6 +107,11 @@ body {
       .pages_area .page_list a.active {
         font-weight: bold; }
 
+.section_line {
+  width: 100%;
+  height: 15px;
+  background: #906842; }
+
 .logo_menu_area {
   display: flex;
   margin: 30px auto 50px;
@@ -168,22 +173,70 @@ body {
     color: #fff; }
 
 .post-parallax {
+  background-position: left top;
+  background-size: 50% auto;
   background-image: url("../images/index/img_smoke.jpg"); }
+  .post-parallax .section_title h4 {
+    display: inline-block;
+    padding: 0 3px;
+    border-bottom: 3px solid #9f9f9f;
+    font-size: 20px;
+    color: #303030; }
+  .post-parallax .section_text {
+    position: relative;
+    padding: 0 50px; }
   .post-parallax .orange-overlay {
+    top: -1px;
+    right: 1px;
     display: block;
+    width: 100%;
+    height: 101%;
     background: #f8e6d8; }
     .post-parallax .orange-overlay:before {
       content: "";
+      position: absolute;
+      right: 0;
+      bottom: -10px;
       width: 80%;
-      height: 10px;
+      height: 20px;
       background: #906842; }
   @media screen and (max-width: 767px) {
-    .post-parallax .orange-overlay {
-      width: 100%;
-      background: rgba(248, 230, 216, 0.5); } }
+    .post-parallax {
+      background-size: 100% auto; }
+      .post-parallax .section_title {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0); }
+      .post-parallax .section_text {
+        margin-top: 100px; }
+      .post-parallax .orange-overlay {
+        width: 100%;
+        background: rgba(248, 230, 216, 0.5); } }
 
-.page-content {
-  padding: 0; }
+.section_lesson {
+  margin: 0 auto 30px;
+  width: 80%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images/index/section_lesson.png"); }
+  .section_lesson img {
+    width: 100%; }
+
+.lesson_box .lesson_img {
+  border: 1px solid #7C6450;
+  box-shadow: -3px -3px 0 #7C6450; }
+
+.lesson_box .btn {
+  padding: 10px 30px;
+  background: #906842;
+  font-size: 18px;
+  color: #fff; }
+
+.group_area {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images/index/img_pen.jpg"); }
 
 .portfolio-with-title.blog-m .portfolio-item .portfolio-title h4 {
   padding: 3px 5px;
