@@ -92,6 +92,7 @@ body {
       display: block;
       margin: 5px 0 15px; } }
   #footer .secondary-footer {
+    display: none;
     text-align: center;
     font-size: 12px;
     color: #a67f60; }
@@ -221,7 +222,13 @@ body {
       margin-top: 10px; } }
   .post-parallax .section_text {
     position: relative;
-    padding: 0 50px; }
+    padding: 0 40px;
+    font-family: "標楷體"; }
+    .post-parallax .section_text h4 {
+      font-size: 21px; }
+    .post-parallax .section_text p {
+      line-height: 26px;
+      font-size: 16px; }
   .post-parallax .orange-overlay {
     top: -1px;
     right: 1px;
@@ -406,3 +413,29 @@ body {
     font-size: 16px;
     font-weight: bold;
     color: #896958; }
+
+.portfolio-filter {
+  font-family: "標楷體"; }
+  .portfolio-filter li {
+    margin: 0 10px; }
+    .portfolio-filter li a {
+      margin: 0;
+      font-size: 16px; }
+    .portfolio-filter li.active:before {
+      content: "["; }
+    .portfolio-filter li.active:after {
+      content: "]"; }
+
+.class_video iframe {
+  width: 560px;
+  height: 315px;
+  display: none; }
+
+.class_area:before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 100px;
+  border-top: 3px solid #906842;
+  transform: translate(-50%, 0); }
