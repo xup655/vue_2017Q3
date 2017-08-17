@@ -15,15 +15,16 @@ body {
       }
     }
   }
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 769px) and (max-width: 991px) {
     .logo-brand {
       max-height: 80px;
     }
     .menuzord-menu {
       > li {
-        // margin-left: 5px;
+        margin-left: 0;
         > a {
-          // font-size: 20px;
+          padding: 3px;
+          font-size: 15px;
         }
       }
     }
@@ -31,7 +32,7 @@ body {
 }
 .menuzord-menu {
   > li {
-    margin-left: 5px;
+    // margin-left: 5px;
     line-height: 100px;
     > .megamenu {
       line-height: 1;
@@ -44,8 +45,10 @@ body {
     &:hover,
     &.active {
       > a {
-        border-bottom: 1px solid #C6C6C6;
         color: #82645C;
+        @media screen and (min-width: 769px) {
+          border-bottom: 1px solid #C6C6C6;
+        }
       }
     }
   }
@@ -517,7 +520,7 @@ body {
 }
 
 // case list
-.portfolio.gutter.case_area {
+.case_area {
   &:before {
     content: "";
     position: absolute;
@@ -580,6 +583,7 @@ body {
   font-family: "標楷體";
   li {
     margin: 0 10px;
+    line-height: 1;
     a {
       margin: 0;
       font-size: 16px;
@@ -595,20 +599,75 @@ body {
   }
 }
 .class_video {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  // @media screen and (max-width: 767px) {
+    width: 90%;
+    text-align: center;
+  // }
   iframe {
     width: 560px;
     height: 315px;
-    display: none
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 .class_area {
-  &:before {
-    content: "";
+  margin-top: 400px;
+  padding: 50px 20px 0;
+  background: #f2f2f2;
+  overflow: visible;
+  .class_menu_area {
     position: absolute;
-    top: 30px;
+    top: -380px;
     left: 50%;
-    width: 100px;
-    border-top: 3px solid #906842;
+    width: 100%;
     transform: translate(-50%, 0);
+    &:before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      width: 100px;
+      border-top: 3px solid #906842;
+      transform: translate(-50%, 0);
+    }
+  }
+  .portfolio {
+    h3 {
+      margin-top: -70px;
+      padding: 0 20px;
+      font-size: 32px;
+    }
+    .txt_box {
+      position: relative;
+      background: #fff;
+      border-bottom: 5px solid #8F6844;
+      .number {
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        padding: 3px;
+        min-width: 40px;
+        height: 40px;
+        background: #906843;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        text-align: center;
+        font: normal bold 20px/30px arial, serif;
+        color: #fff;
+      }
+      h2 {
+        padding: 10px 0;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 500px;
+    // .class_menu_area {
+    //   top: -400px;
+    // }
   }
 }

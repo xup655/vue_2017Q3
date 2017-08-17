@@ -9,12 +9,16 @@ body {
       margin-left: 10px; }
       .container-fluid .menuzord-menu > li > a {
         font-size: 22px; } }
-  @media screen and (max-width: 991px) {
+  @media screen and (min-width: 769px) and (max-width: 991px) {
     .container-fluid .logo-brand {
-      max-height: 80px; } }
+      max-height: 80px; }
+    .container-fluid .menuzord-menu > li {
+      margin-left: 0; }
+      .container-fluid .menuzord-menu > li > a {
+        padding: 3px;
+        font-size: 15px; } }
 
 .menuzord-menu > li {
-  margin-left: 5px;
   line-height: 100px; }
   .menuzord-menu > li > .megamenu {
     line-height: 1; }
@@ -23,8 +27,10 @@ body {
     line-height: 1;
     font-size: 18px; }
   .menuzord-menu > li:hover > a, .menuzord-menu > li.active > a {
-    border-bottom: 1px solid #C6C6C6;
     color: #82645C; }
+    @media screen and (min-width: 769px) {
+      .menuzord-menu > li:hover > a, .menuzord-menu > li.active > a {
+        border-bottom: 1px solid #C6C6C6; } }
 
 .l-navbar-wrapper_has-sticky .menuzord-menu > li {
   line-height: 60px; }
@@ -364,7 +370,7 @@ body {
     font-weight: bold;
     color: #727171; }
 
-.portfolio.gutter.case_area:before {
+.case_area:before {
   content: "";
   position: absolute;
   top: -80px;
@@ -373,21 +379,21 @@ body {
   border-top: 3px solid #906842;
   transform: translate(-50%, 0); }
 
-.portfolio.gutter.case_area .portfolio-item {
+.case_area .portfolio-item {
   margin-bottom: 20px;
   padding: 20px; }
-  .portfolio.gutter.case_area .portfolio-item .portfolio-hover {
+  .case_area .portfolio-item .portfolio-hover {
     top: 5%;
     left: 5%;
     width: 90%;
     height: 90%;
     border: 0; }
-  .portfolio.gutter.case_area .portfolio-item:hover .portfolio-hover .portfolio-description {
+  .case_area .portfolio-item:hover .portfolio-hover .portfolio-description {
     top: 50%;
     bottom: auto;
     margin-bottom: 20px; }
 
-.portfolio.gutter.case_area .portfolio-description h4 {
+.case_area .portfolio-description h4 {
   font-size: 32px;
   font-weight: bold;
   color: #8D5747; }
@@ -412,7 +418,8 @@ body {
 .portfolio-filter {
   font-family: "標楷體"; }
   .portfolio-filter li {
-    margin: 0 10px; }
+    margin: 0 10px;
+    line-height: 1; }
     .portfolio-filter li a {
       margin: 0;
       font-size: 16px; }
@@ -421,16 +428,61 @@ body {
     .portfolio-filter li.active:after {
       content: "]"; }
 
-.class_video iframe {
-  width: 560px;
-  height: 315px;
-  display: none; }
-
-.class_area:before {
-  content: "";
+.class_video {
   position: absolute;
-  top: 30px;
+  top: 130px;
   left: 50%;
-  width: 100px;
-  border-top: 3px solid #906842;
-  transform: translate(-50%, 0); }
+  transform: translate(-50%, 0);
+  width: 90%;
+  text-align: center; }
+  .class_video iframe {
+    width: 560px;
+    height: 315px;
+    max-width: 100%;
+    max-height: 100%; }
+
+.class_area {
+  margin-top: 400px;
+  padding: 50px 20px 0;
+  background: #f2f2f2;
+  overflow: visible; }
+  .class_area .class_menu_area {
+    position: absolute;
+    top: -380px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0); }
+    .class_area .class_menu_area:before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      width: 100px;
+      border-top: 3px solid #906842;
+      transform: translate(-50%, 0); }
+  .class_area .portfolio h3 {
+    margin-top: -70px;
+    padding: 0 20px;
+    font-size: 32px; }
+  .class_area .portfolio .txt_box {
+    position: relative;
+    background: #fff;
+    border-bottom: 5px solid #8F6844; }
+    .class_area .portfolio .txt_box .number {
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      padding: 3px;
+      min-width: 40px;
+      height: 40px;
+      background: #906843;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      text-align: center;
+      font: normal bold 20px/30px arial, serif;
+      color: #fff; }
+    .class_area .portfolio .txt_box h2 {
+      padding: 10px 0; }
+  @media screen and (max-width: 768px) {
+    .class_area {
+      margin-top: 500px; } }
