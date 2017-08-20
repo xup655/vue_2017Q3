@@ -10,7 +10,7 @@
     <!--favicon icon-->
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
-    <title>經典案例</title>
+    <title>產品列表</title>
 
     <!--common style-->
     <link href='http://fonts.googleapis.com/css?family=Abel|Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700,700italic,900,900italic,200italic,200' rel='stylesheet' type='text/css'>
@@ -67,10 +67,10 @@
                             <li class=""><a href="javascript:void(0)">品牌</a>
                             </li>
 
-                            <li><a href="news.html">最新消息</a>
+                            <li class="active"><a href="news.html">最新消息</a>
                             </li>
 
-                            <li class="active"><a href="case.html">經典案例 </a>
+                            <li><a href="case.html">經典案例 </a>
                             </li>
 
                             <li><a href="#.html">實體課程</a>
@@ -143,10 +143,10 @@
                             </div>
                             </li>
 
-                            <li class=""> <a href="class.html">線上課程</a> 
+                            <li class=""> <a href="javascript:void(0)">線上課程</a> 
                             </li>
 
-                            <li><a href="categoery.html">產品資訊</a>
+                            <li><a href="#">產品資訊</a>
                             </li>
 
                             <li><a href="#">前往協會</a></li>
@@ -168,28 +168,112 @@
         <!--header end-->
 
         <!--body content start-->
-        <section class="body-content page-content p-bot-0">
+        <section class="body-content category_area">
 
-            <div class="portfolio col-3 gutter clearfix vue_case case_area">
+            <div class="page-content product-grid">
+                <div class="container">
+                    <div class="row">
 
-                <div v-for="n in 6" class="portfolio-item">
-                    <div class="thumb">
-                        <a href="case_content.html">
-                            <img src="demo/case_list_01.jpg" alt="">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-description">
-                                    <h4>九度絲滑飄眉</h4>
+                        <div class="col-md-3">
+                            <!--product category-->
+                            <div class="widget">
+                                <div class="heading-title-alt text-left">
+                                    <h5 style="font-size: 24px;">產品類別</h5>
+                                    <h6 style="color: #bebebe;">product description</h6>
                                 </div>
+                                <ul class="widget-category">
+                                    <li class=" heading-border-bottom"><a href="#">色彩精華乳</a>
+                                    </li>
+                                    <li class=" heading-border-bottom"><a href="#">紋繡色乳</a>
+                                    </li>
+                                    <li class=" heading-border-bottom"><a href="#">紋繡機器</a>
+                                    </li>
+                                    <li class=" heading-border-bottom"><a href="#">拋棄式針類</a>
+                                    </li>
+                                    <li class=" heading-border-bottom"><a href="#">紋繡專業商品</a>
+                                    </li>
+                                    <li class=" heading-border-bottom"><a href="#">輔助用品</a>
+                                    </li>
+                                </ul>
                             </div>
-                        </a>
+                            <!--product category-->
+
+                        </div>
+
+                        <div class="col-md-9">
+                            <div class="row vue_product">
+                                <div v-for="n in 3">
+                                    <div class="col-md-6">
+                                        <!--product list-->
+                                        <div class="product-list">
+                                            <div class="product-img">
+                                                <a href="product.html">
+                                                    <img src="demo/product_01.jpg" alt="" />
+                                                </a>
+                                                <a href="product.html">
+                                                    <img src="demo/product_02.jpg" alt="" />
+                                                </a>
+                                                <!--<div class="sale-label">
+                                                    Sale
+                                                </div>-->
+                                            </div>
+                                            <div class="product-title">
+                                                <h5><a href=".product.html">定點液</a></h5>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="o_price">原價：<span>999</span></span> <span class="s_price">會員價：<span>850</span> </span>
+                                            </div>
+                                        </div>
+                                        <!--product list-->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <!--product list-->
+                                        <div class="product-list">
+                                            <div class="product-img">
+                                                <a href="product.html">
+                                                    <img src="demo/product_03.jpg" alt="" />
+                                                </a>
+                                                <a href="product.html">
+                                                    <img src="demo/product_04.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="product-title">
+                                                <h5><a href=".product.html">定點液</a></h5>
+                                            </div>
+                                            <div class="product-price">
+                                                <span class="o_price">原價<span>999</span></span> <span class="s_price">會員價<span>850</span> </span>
+                                            </div>
+                                        </div>
+                                        <!--product list-->
+                                    </div>
+                                </div>
+
+                                <div class="text-center col-md-12">
+                                    <ul class="pagination custom-pagination">
+                                        <span class="arrow"><a href="#"> < </a>
+                                        </span>
+                                        <li class="active"><a href="#">1</a>
+                                        </li>
+                                        <li><a href="#">2</a>
+                                        </li>
+                                        <li><a href="#">3</a>
+                                        </li>
+                                        <li><a href="#">4</a>
+                                        </li>
+                                        <li><a href="#">5</a>
+                                        </li>
+                                        <span class="arrow"><a href="#"> > </a>
+                                        </span>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
             </div>
 
-            <div class="notice">
-                <p>所有作品皆是經由本人同意公開分享</p>
-            </div>
 
         </section>
         <!--body content end-->
@@ -260,7 +344,7 @@
     <script src="demo/vue.js"></script>
     <script>
         new Vue({
-            el:'.vue_case'
+            el:'.vue_product'
         });
     </script>
     <!-- endDEMO -->
