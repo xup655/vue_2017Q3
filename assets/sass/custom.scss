@@ -491,10 +491,11 @@ p {
           text-transform: capitalize;
         }
       }
-      .icon_new {
-        margin-right: 5px;
-      }
+      // .icon_new {
+      //   margin-right: 5px;
+      // }
       .date {
+        letter-spacing: 3px;
         font-size: 16px;
         color: #A29E9F;
       }
@@ -511,6 +512,22 @@ p {
         text-align: right;
         h4 {
           text-align: left;
+        }
+      }
+    }
+    &:first-child {
+      .portfolio-title {
+        h4 {
+          &:before {
+            content: "";
+            display: inline-block;
+            margin-right: 5px;
+            width: 23px;
+            height: 23px;
+            background-image: url("../images/news/icon_new.svg");
+            background-size: cover;
+            vertical-align: bottom;
+          }
         }
       }
     }
@@ -598,6 +615,27 @@ p {
     font-size: 16px;
     font-weight: bold;
     color: #896958;
+  }
+}
+
+// case content
+.case_content_area {
+  .icon-box-tabs {
+    font-family: "微軟正黑體";
+    .nav-pills {
+      li,
+      li.active {
+        a {
+          background: none;
+          color: #898989;
+        }
+      }
+      li {
+        &.active {
+          color: #58433A;
+        }
+      }
+    }
   }
 }
 
