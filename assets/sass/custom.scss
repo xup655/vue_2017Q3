@@ -620,6 +620,9 @@ p {
 
 // case content
 .case_content_area {
+  .tab-parallax {
+    background: none;
+  }
   .icon-box-tabs {
     font-family: "微軟正黑體";
     .nav-pills {
@@ -627,15 +630,28 @@ p {
       li.active {
         a {
           background: none;
+          font-size: 18px;
           color: #898989;
+          &:after {
+            border-color: #F6E3D5 transparent transparent transparent;
+          }
         }
       }
-      li {
-        &.active {
+      li.active {
+        a {
           color: #58433A;
         }
       }
     }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100px;
+    border-top: 3px solid #906842;
+    transform: translate(-50%, 0);
   }
 }
 

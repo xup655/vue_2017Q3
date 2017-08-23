@@ -436,14 +436,30 @@ p {
     font-weight: bold;
     color: #896958; }
 
+.case_content_area .tab-parallax {
+  background: none; }
+
 .case_content_area .icon-box-tabs {
   font-family: "微軟正黑體"; }
   .case_content_area .icon-box-tabs .nav-pills li a,
   .case_content_area .icon-box-tabs .nav-pills li.active a {
     background: none;
+    font-size: 18px;
     color: #898989; }
-  .case_content_area .icon-box-tabs .nav-pills li.active {
+    .case_content_area .icon-box-tabs .nav-pills li a:after,
+    .case_content_area .icon-box-tabs .nav-pills li.active a:after {
+      border-color: #F6E3D5 transparent transparent transparent; }
+  .case_content_area .icon-box-tabs .nav-pills li.active a {
     color: #58433A; }
+
+.case_content_area:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100px;
+  border-top: 3px solid #906842;
+  transform: translate(-50%, 0); }
 
 .portfolio-filter {
   font-family: "標楷體"; }
