@@ -134,12 +134,12 @@ p {
 .pagination.custom-pagination > li.active > a {
   background: none;
   font-weight: bold;
-  color: inherit; }
+  color: #6A3906; }
 
 .pagination.custom-pagination > li.active:hover > a {
   background: none;
   font-weight: bold;
-  color: inherit; }
+  color: #6A3906; }
 
 .pagination.custom-pagination .arrow a {
   float: left;
@@ -376,16 +376,18 @@ p {
   background-size: cover;
   vertical-align: bottom; }
 
-.blog-classic {
+.news_content_area {
   border: 0; }
-  .blog-classic p {
+  .news_content_area p {
     color: #727171; }
-  .blog-classic .blog-post .post_content {
+  .news_content_area .blog-post .post_content {
     margin: 0 auto;
     width: 80%; }
-  .blog-classic .blog-post .full-width {
+    .news_content_area .blog-post .post_content img {
+      max-width: 100%; }
+  .news_content_area .blog-post .full-width {
     margin-bottom: 0; }
-  .blog-classic .post-meta li {
+  .news_content_area .post-meta li {
     margin: 10px 0 0;
     font-size: 15px;
     font-weight: bold;
@@ -441,16 +443,52 @@ p {
 
 .case_content_area .icon-box-tabs {
   font-family: "微軟正黑體"; }
-  .case_content_area .icon-box-tabs .nav-pills li a,
-  .case_content_area .icon-box-tabs .nav-pills li.active a {
-    background: none;
-    font-size: 18px;
-    color: #898989; }
-    .case_content_area .icon-box-tabs .nav-pills li a:after,
-    .case_content_area .icon-box-tabs .nav-pills li.active a:after {
-      border-color: #F6E3D5 transparent transparent transparent; }
-  .case_content_area .icon-box-tabs .nav-pills li.active a {
-    color: #58433A; }
+  .case_content_area .icon-box-tabs .nav-pills {
+    display: flex; }
+    .case_content_area .icon-box-tabs .nav-pills li,
+    .case_content_area .icon-box-tabs .nav-pills li.active {
+      flex: 1; }
+      .case_content_area .icon-box-tabs .nav-pills li a,
+      .case_content_area .icon-box-tabs .nav-pills li.active a {
+        padding: 30px 10px;
+        background: none;
+        text-align: center;
+        font-size: 18px;
+        color: #898989; }
+        .case_content_area .icon-box-tabs .nav-pills li a:after,
+        .case_content_area .icon-box-tabs .nav-pills li.active a:after {
+          bottom: 0;
+          border-width: 0 10px 10px 10px;
+          border-color: transparent transparent #F6E3D5 transparent; }
+    .case_content_area .icon-box-tabs .nav-pills li.active a {
+      font-weight: bold;
+      color: #58433A; }
+
+.case_content_area .tab-content {
+  position: relative;
+  background: #f6e3d5;
+  border-bottom: 3px solid #D4B7AB; }
+  .case_content_area .tab-content:after {
+    content: "";
+    position: absolute;
+    bottom: -23px;
+    left: 80%;
+    width: 0;
+    height: 0;
+    border-width: 20px 20px 0 20px;
+    border-style: solid;
+    border-color: #D4B7AB transparent transparent transparent; }
+
+.case_content_area .notice:before {
+  display: none; }
+
+.case_content_area .blog-classic {
+  margin-bottom: 0;
+  border: 0; }
+  .case_content_area .blog-classic .post_content {
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: 3px solid #eddbd7; }
 
 .case_content_area:before {
   content: "";

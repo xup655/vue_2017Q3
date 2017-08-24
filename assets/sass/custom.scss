@@ -204,13 +204,13 @@ p {
           > a {
             background: none;
             font-weight: bold;
-            color: inherit;
+            color: #6A3906;
           }
           &:hover {
             > a {
               background: none;
               font-weight: bold;
-              color: inherit;
+              color: #6A3906;
             }
           }
       }
@@ -535,7 +535,7 @@ p {
 }
 
 // news content
-.blog-classic {
+.news_content_area {
   border: 0;
   p {
     color: #727171;
@@ -544,6 +544,9 @@ p {
     .post_content {
       margin: 0 auto;
       width: 80%;
+      img {
+        max-width: 100%;
+      }
     }
     .full-width {
       margin-bottom: 0;
@@ -626,22 +629,57 @@ p {
   .icon-box-tabs {
     font-family: "微軟正黑體";
     .nav-pills {
+      display: flex;
       li,
       li.active {
+        flex: 1;
         a {
+          padding: 30px 10px;
           background: none;
+          text-align: center;
           font-size: 18px;
           color: #898989;
           &:after {
-            border-color: #F6E3D5 transparent transparent transparent;
+            bottom: 0;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent#F6E3D5  transparent;
           }
         }
       }
       li.active {
         a {
+          font-weight: bold;
           color: #58433A;
         }
       }
+    }
+  }
+  .tab-content {
+    position: relative;
+    background: #f6e3d5;
+    border-bottom: 3px solid #D4B7AB;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -23px;
+      left: 80%;
+      width: 0;
+      height: 0;
+      border-width: 20px 20px 0 20px;
+      border-style: solid;
+      border-color: #D4B7AB transparent transparent transparent;
+    }
+  }
+  .notice:before {
+    display: none;
+  }
+  .blog-classic {
+    margin-bottom: 0;
+    border: 0;
+    .post_content {
+      margin: 0 auto;
+      width: 80%;
+      border-bottom: 3px solid #eddbd7;
     }
   }
   &:before {
