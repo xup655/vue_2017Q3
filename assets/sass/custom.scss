@@ -570,7 +570,7 @@ p {
     .post_content {
       margin: 0 auto;
       width: 80%;
-      img {
+      * {
         max-width: 100%;
       }
     }

@@ -400,7 +400,7 @@ p {
   .news_content_area .blog-post .post_content {
     margin: 0 auto;
     width: 80%; }
-    .news_content_area .blog-post .post_content img {
+    .news_content_area .blog-post .post_content * {
       max-width: 100%; }
   .news_content_area .blog-post .full-width {
     margin-bottom: 0; }
