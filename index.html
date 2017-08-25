@@ -56,9 +56,11 @@
                     <nav class="menuzord js-primary-navigation" role="navigation" aria-label="Primary Navigation">
 
                         <!--logo start-->
-                        <a href="#" class="logo-brand">
-                            <i class="icon"></i>
-                            課程表
+                        <a href="#" class="logo-brand item box">
+                            <h3 class="item-inner box-img" data-mfp-src="http://www.calendarpedia.com/images/months/2017/april--2017--calendar.png">
+                                <i class="icon-calendar"></i>
+                                課程表
+                            </h3>
                         </a>
                         <!--logo end-->
 
@@ -373,6 +375,35 @@
     <script src="assets/vendor/wow/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <!-- endinject -->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.tb-grid').masonry({
+                // options
+                itemSelector: '.item',
+                percentPosition: true,
+                columnWidth: '.box',
+            });
+
+            var $imgBoxes = $('.tb-grid').find('.box-img');
+            $imgBoxes.each(function(index, item) {
+                var $item = $(item), src = $item.data('src');
+                if(src) {
+                    $item.css({
+                        backgroundImage: 'url(' + src + ')'
+                    })
+                }
+            });
+
+            $('.box-img').magnificPopup({
+                type:'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
