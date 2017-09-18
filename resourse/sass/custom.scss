@@ -1171,6 +1171,24 @@ p {
   }
 }
 
+// login
+.login_area {
+  h1 {
+    font-size: 22px;
+    color: #906842;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      width: 20%;
+      border-bottom: 3px solid #906842;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
 // common
 .text_overflow {
   overflow : hidden;

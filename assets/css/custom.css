@@ -853,6 +853,18 @@ p {
   border-top: 3px solid #906842;
   transform: translate(-50%, 0); }
 
+.login_area h1 {
+  font-size: 22px;
+  color: #906842; }
+  .login_area h1:before, .login_area h1:after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 20%;
+    border-bottom: 3px solid #906842;
+    transform: translate(-50%, 0); }
+
 .text_overflow {
   overflow: hidden;
   text-overflow: ellipsis;
