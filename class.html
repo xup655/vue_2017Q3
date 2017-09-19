@@ -8,7 +8,7 @@
     <meta name="author" content="Mosaddek">
 
     <!--favicon icon-->
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <!-- <link rel="icon" type="image/png" href="assets/img/favicon.png"> -->
 
     <title>線上課程</title>
 
@@ -167,136 +167,67 @@
         </header>
         <!--header end-->
 
-            <!--video-->
-            <div class="container">
-                    <div class="m-top-30 m-bot-30 class_video">
-                        <iframe src="https://www.youtube.com/embed/smgzP8qNXTo" frameborder="0" allowfullscreen></iframe>
-                    </div>
-            </div>
-            <!--video end-->
-
         <!--body content start-->
-        <section class="body-content page-content class_area">
+        <section class="body-content page-content p-bot-0 class_area">
 
-            <!--menu end-->
-            <section class="class_menu_area text-center">
 
-                <ul class="portfolio-filter">
-                    <li class="active"><a href="#" data-filter="*"> 紋繡</a>
-                    </li>
-                    <li><a href="#" data-filter=".cat1">睫毛</a>
-                    </li>
-                    <li><a href="#" data-filter=".cat2">美容</a>
-                    </li>
-                    <li><a href="#" data-filter=".cat3">美術課程</a>
-                    </li>
-                    <li><a href="#" data-filter=".cat4">其他</a>
-                    </li>
-                </ul>
+            <div class="p-top-50" style="background: #f2f2f2;margin-top: 650px;">
+                <div class="container">
+                    <div style="margin:auto; width: 80%;">
 
-            </section>
-            <!--menu end-->
+                        <!--menu end-->
+                        <section class="class_menu_area text-center">
 
-            <div class="container">
-                <div class="portfolio col-3 gutter p-top-10">
+                            <ul class="portfolio-filter">
+                                <li class="active"><a class="js_click" href="#" data-filter=".cat1">紋繡</a></li>
+                                <li><a href="#" data-filter=".cat2">睫毛</a></li>
+                                <li><a href="#" data-filter=".cat3">美容</a></li>
+                                <li><a href="#" data-filter=".cat4">美術課程</a></li>
+                                <li><a href="#" data-filter=".cat5">其他</a></li>
+                            </ul>
 
-                    <h3>所有課程</h3>
+                        </section>
+                        <!--menu end-->
 
-                    <div class="portfolio-item cat1 cat3 ">
-                        <div class="thumb">
-                            <a href="class_content.html">
-                                <img src="demo/class_list_01.jpg" alt="">
-                                <div class="txt_box">
-                                    <i class="number">1</i> 
-                                    <div class="portfolio-description">
-                                        <h2 class="text-center">紋繡課程概論</h2>
-                                        <p class="text-right">課程：<span>16</span>分</p>
-                                    </div> 
-                                </div> 
-                            </a>
-                        </div>
-                    </div>
+                        <div class="portfolio col-3 gutter p-top-10 vue_portfolio example-1">
 
-                    <div class="portfolio-item cat1 cat4">
-                        <div class="thumb">
-                            <a href="class_content.html">
-                                <img src="demo/class_list_02.jpg" alt="">
-                                <div class="txt_box">
-                                    <i class="number">2</i> 
-                                    <div class="portfolio-description">
-                                        <h2 class="text-center">時尚水晶裸</h2>
-                                        <p class="text-right">課程：<span>16</span>分</p>
+                            <!--video-->
+                            <div class="">
+                                <div class="class_video portfolio-item cat1 cat4">
+                                    <iframe src="https://www.youtube.com/embed/smgzP8qNXTo" width="800" height="450" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <div class="class_video portfolio-item cat2 cat5">
+                                    <iframe src="https://www.youtube.com/embed/ybfWYpYhTQQ" width="800" height="450" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h3 class="portfolio-item cat1 cat2 cat3 cat4 cat5">所有課程</h3>
+                            </div>
+                            <!--video end-->
+
+                            <div class="list" v-for="(item, index) in items">
+                                <div class="portfolio-item cat1" v-bind:class="[{ cat1: is_cat1, cat2: is_cat2, cat3: is_cat3, cat4: is_cat4 }]">
+                                    <div class="thumb">
+                                        <a href="class_content.html">
+                                            <img alt="" v-bind:title="index+1" v-bind:src="'demo/class_list_0' + (index + 1) + '.jpg'">
+                                            <div class="txt_box">
+                                                <i class="number">{{ index + 1 }}</i> 
+                                                <div class="portfolio-description">
+                                                    <h2 class="text-center">{{ item.message }}</h2>
+                                                    <p class="text-right">課程：<span>16</span>分</p>
+                                                </div> 
+                                            </div> 
+                                        </a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
+                            
                         </div>
-                    </div>
 
-                    <div class="portfolio-item cat2 cat4">
-                        <div class="thumb">
-                            <a href="class_content.html">
-                                <img src="demo/class_list_03.jpg" alt="">
-                                <div class="txt_box">
-                                    <i class="number">3</i> 
-                                    <h2 class="text-center">魔力黑睫眼線</h2>
-                                    <div class="portfolio-description">
-                                        <p class="text-right">課程：<span>16</span>分</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item cat2 cat4">
-                        <div class="thumb">
-                            <a href="class_content.html">
-                                <img src="demo/class_list_04.jpg" alt="">
-                                <div class="txt_box">
-                                    <i class="number">4</i> 
-                                    <div class="portfolio-description">
-                                        <h2 class="text-center">女神柔霧眉</h2>
-                                        <p class="text-right">課程：<span>16</span>分</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item cat3 ">
-                        <div class="thumb">
-                            <a href="class_content.html">
-                                <img src="demo/class_list_05.jpg" alt="">
-                                <div class="txt_box">
-                                    <i class="number">5</i> 
-                                    <div class="portfolio-description">
-                                        <h2 class="text-center">紋繡寶典</h2>
-                                        <p class="text-right">課程：<span>16</span>分</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="portfolio-item cat1 cat4 cat3 cat5">
-                        <div class="thumb">
-                            <a href="class_content.html">
-                                <img src="demo/class_list_06.jpg" alt="">
-                                <div class="txt_box">
-                                    <i class="number">6</i> 
-                                    <div class="portfolio-description">
-                                        <h2 class="text-center">蘊眉</h2>
-                                        <p class="text-right">課程：<span>16</span>分</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
                     </div>
                     
                 </div>
             </div>
             
-            <div class="text-center col-md-12">
+            <div class="text-center col-md-12 pagination_area">
                 <ul class="pagination custom-pagination">
                     <span class="arrow"><a href="#"> < </a>
                     </span>
@@ -362,7 +293,7 @@
     <script src="assets/vendor/easy-pie-chart/jquery.easypiechart.min.js"></script>
     <script src="assets/vendor/elasic-slider/jquery.eislideshow.js"></script>
     <script src="assets/vendor/flex-slider/jquery.flexslider-min.js"></script>
-    <script src="assets/vendor/gmap/jquery.gmap.min.js"></script>
+    <!-- <script src="assets/vendor/gmap/jquery.gmap.min.js"></script> -->
     <script src="assets/vendor/images-loaded/imagesloaded.js"></script>
     <script src="assets/vendor/isotope/jquery.isotope.js"></script>
     <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
@@ -379,6 +310,40 @@
     <script src="assets/vendor/wow/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <!-- endinject -->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".js_click").click();
+        });
+    </script>
+
+    <!-- DEMO -->
+    <script src="demo/vue.js"></script>
+    <script>
+        // var portfoli = new Vue({
+        //     el:'.vue_portfolio'
+        // });
+        
+        var example1 = new Vue({
+            el: '.example-1',
+            data: {
+                items: [
+                { message: '紋繡課程概論' },
+                { message: '時尚水晶裸' },
+                { message: '魔力黑睫眼線' },
+                { message: '女神柔霧眉' },
+                { message: '紋繡寶典' },
+                { message: '蘊眉' }
+                ],
+                is_cat1: true,
+                is_cat2: true,
+                is_cat3: true,
+                is_cat4: false
+            }
+        })
+    </script>
+    <!-- endDEMO -->
+
 </body>
 
 </html>

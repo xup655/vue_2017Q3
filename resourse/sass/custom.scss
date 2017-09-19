@@ -8,6 +8,12 @@ body,
 p {
   margin: 0;
 }
+
+.font_KaiU {
+  font-family: "標楷體";
+}
+
+
 // nav
 .container-fluid {
   font-family: "標楷體";
@@ -296,6 +302,7 @@ p {
   }
   .menu {
     margin-left: 50px;
+    font-size: 22px;
   }
   a {
     color: #424242;
@@ -339,12 +346,13 @@ p {
   }
   h5 {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
   }
   .btn {
     margin-top: 15px;
     padding: 5px 20px;
     background: #906842;
+    font-size: 17px;
     color: #fff;
   }
 }
@@ -810,7 +818,7 @@ p {
     line-height: 1;
     a {
       margin: 0;
-      font-size: 16px;
+      font-size: 21px;
     }
     &.active {
       &:before {
@@ -823,46 +831,44 @@ p {
   }
 }
 .class_video {
-  position: absolute;
-  top: 130px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  // @media screen and (max-width: 767px) {
-    width: 90%;
-    text-align: center;
-  // }
+  margin-bottom: 100px;
+  // position: absolute;
+  // top: 130px;
+  // left: 50%;
+  // transform: translate(-50%, 0);
+  width: 100% !important;
+  text-align: center;
   iframe {
-    width: 560px;
-    height: 315px;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 100%; // for mb
+    max-height: 100%; // for mb
   }
 }
 .class_area {
-  margin-top: 400px;
-  padding: 50px 20px 0;
-  background: #f2f2f2;
+  // margin-top: 400px;
+  // padding: 50px 0 0;
+  // background: #f2f2f2;
   overflow: visible;
-  .class_menu_area {
+  &:before {
+    content: "";
     position: absolute;
-    top: -380px;
+    top: 50px;
     left: 50%;
-    width: 100%;
+    width: 100px;
+    border-top: 3px solid #906842;
     transform: translate(-50%, 0);
-    &:before {
-      content: "";
-      position: absolute;
-      top: -30px;
-      left: 50%;
-      width: 100px;
-      border-top: 3px solid #906842;
-      transform: translate(-50%, 0);
-    }
+  }
+  .class_menu_area {
+    margin-top: -680px;
+    // position: absolute;
+    // top: -380px;
+    // left: 50%;
+    // width: 100%;
+    // transform: translate(-50%, 0);
   }
   .portfolio {
     h3 {
-      margin-top: -70px;
-      padding: 0 20px;
+      width: 100% !important;
+      height: 30px;
       font-size: 32px;
     }
     .txt_box {
@@ -884,15 +890,18 @@ p {
         color: #fff;
       }
       h2 {
-        padding: 10px 0;
+        padding: 30px 0;
       }
     }
   }
   @media screen and (max-width: 768px) {
-    margin-top: 500px;
+    // margin-top: 500px;
     // .class_menu_area {
     //   top: -400px;
     // }
+  }
+  .pagination_area {
+    background: #f2f2f2;
   }
 }
 

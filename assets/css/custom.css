@@ -9,6 +9,9 @@ body,
 p {
   margin: 0; }
 
+.font_KaiU {
+  font-family: "標楷體"; }
+
 .container-fluid {
   font-family: "標楷體"; }
   @media screen and (min-width: 1200px) {
@@ -202,7 +205,8 @@ p {
     .logo_menu_area .logo img {
       max-width: 100%; }
   .logo_menu_area .menu {
-    margin-left: 50px; }
+    margin-left: 50px;
+    font-size: 22px; }
   .logo_menu_area a {
     color: #424242; }
     .logo_menu_area a .text-uppercase {
@@ -237,11 +241,12 @@ p {
     font-size: 22px; }
   .introduce_area h5 {
     margin: 0;
-    font-size: 14px; }
+    font-size: 16px; }
   .introduce_area .btn {
     margin-top: 15px;
     padding: 5px 20px;
     background: #906842;
+    font-size: 17px;
     color: #fff; }
 
 .post-parallax {
@@ -584,47 +589,35 @@ p {
     line-height: 1; }
     .portfolio-filter li a {
       margin: 0;
-      font-size: 16px; }
+      font-size: 21px; }
     .portfolio-filter li.active:before {
       content: "["; }
     .portfolio-filter li.active:after {
       content: "]"; }
 
 .class_video {
-  position: absolute;
-  top: 130px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 90%;
+  margin-bottom: 100px;
+  width: 100% !important;
   text-align: center; }
   .class_video iframe {
-    width: 560px;
-    height: 315px;
     max-width: 100%;
     max-height: 100%; }
 
 .class_area {
-  margin-top: 400px;
-  padding: 50px 20px 0;
-  background: #f2f2f2;
   overflow: visible; }
-  .class_area .class_menu_area {
+  .class_area:before {
+    content: "";
     position: absolute;
-    top: -380px;
+    top: 50px;
     left: 50%;
-    width: 100%;
+    width: 100px;
+    border-top: 3px solid #906842;
     transform: translate(-50%, 0); }
-    .class_area .class_menu_area:before {
-      content: "";
-      position: absolute;
-      top: -30px;
-      left: 50%;
-      width: 100px;
-      border-top: 3px solid #906842;
-      transform: translate(-50%, 0); }
+  .class_area .class_menu_area {
+    margin-top: -680px; }
   .class_area .portfolio h3 {
-    margin-top: -70px;
-    padding: 0 20px;
+    width: 100% !important;
+    height: 30px;
     font-size: 32px; }
   .class_area .portfolio .txt_box {
     position: relative;
@@ -644,10 +637,9 @@ p {
       font: normal bold 20px/30px arial, serif;
       color: #fff; }
     .class_area .portfolio .txt_box h2 {
-      padding: 10px 0; }
-  @media screen and (max-width: 768px) {
-    .class_area {
-      margin-top: 500px; } }
+      padding: 30px 0; }
+  .class_area .pagination_area {
+    background: #f2f2f2; }
 
 .class_content_video {
   margin: 30px 0;
