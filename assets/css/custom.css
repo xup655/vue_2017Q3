@@ -590,6 +590,8 @@ p {
     .portfolio-filter li a {
       margin: 0;
       font-size: 21px; }
+    .portfolio-filter li.active:before, .portfolio-filter li.active:after {
+      margin: 0 10px; }
     .portfolio-filter li.active:before {
       content: "["; }
     .portfolio-filter li.active:after {
@@ -617,8 +619,8 @@ p {
     margin-top: -680px; }
   .class_area .portfolio h3 {
     width: 100% !important;
-    height: 30px;
-    font-size: 32px; }
+    height: 50px;
+    font-size: 34px; }
   .class_area .portfolio .txt_box {
     position: relative;
     background: #fff;

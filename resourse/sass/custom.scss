@@ -821,6 +821,10 @@ p {
       font-size: 21px;
     }
     &.active {
+      &:before,
+      &:after {
+        margin: 0 10px;
+      }
       &:before {
         content: "[";
       }
@@ -868,8 +872,8 @@ p {
   .portfolio {
     h3 {
       width: 100% !important;
-      height: 30px;
-      font-size: 32px;
+      height: 50px;
+      font-size: 34px;
     }
     .txt_box {
       position: relative;
