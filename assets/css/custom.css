@@ -368,6 +368,15 @@ p {
     z-index: 0;
     background: rgba(255, 255, 255, 0.5); }
 
+.about_area .about_content_area:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: 100px;
+  border-top: 3px solid #906842;
+  transform: translate(-50%, 0); }
+
 .portfolio-with-title.blog-m .portfolio-item .portfolio-title h4 {
   padding: 3px 5px;
   background: #fef4ef;

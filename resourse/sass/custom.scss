@@ -513,6 +513,21 @@ p {
   }
 }
 
+// about
+.about_area {
+  .about_content_area {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      width: 100px;
+      border-top: 3px solid #906842;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
 // news list
 .portfolio-with-title.blog-m {
   .portfolio-item {

@@ -8,9 +8,9 @@
     <meta name="author" content="Mosaddek">
 
     <!--favicon icon-->
-    <!-- <link rel="icon" type="image/png" href="assets/img/favicon.png"> -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
-    <title>線上課程</title>
+    <title>關於我們</title>
 
     <!--common style-->
     <link href='http://fonts.googleapis.com/css?family=Abel|Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700,700italic,900,900italic,200italic,200' rel='stylesheet' type='text/css'>
@@ -143,7 +143,7 @@
                             </div>
                             </li>
 
-                            <li class="active"><a href="class.html">線上課程</a> 
+                            <li><a href="class.html">線上課程</a> 
                             </li>
 
                             <li><a href="categoery.html">產品資訊</a>
@@ -167,83 +167,84 @@
         </header>
         <!--header end-->
 
+        <!--hero section-->
+        <!-- <div class="text-center vertical-align full-width">
+            <a href="#"><img src="assets/images/about/about_bn.jpg" /></a>
+        </div> -->
+        <!--hero section-->
+
+
         <!--body content start-->
-        <section class="body-content page-content p-bot-0 class_area">
+        <section class="body-content about_area">
 
-
-            <div class="p-top-50" style="background: #f2f2f2;margin-top: 650px;">
+            <div class="page-content">
+                
                 <div class="container">
-                    <div style="margin:auto; width: 80%;">
 
-                        <!--menu end-->
-                        <section class="class_menu_area text-center">
-
-                            <ul class="portfolio-filter">
-                                <li class="active"><a class="js_click" href="#" data-filter=".cat1">紋繡</a></li>
-                                <li><a href="#" data-filter=".cat2">睫毛</a></li>
-                                <li><a href="#" data-filter=".cat3">美容</a></li>
-                                <li><a href="#" data-filter=".cat4">美術課程</a></li>
-                                <li><a href="#" data-filter=".cat5">其他</a></li>
-                            </ul>
-
-                        </section>
-                        <!--menu end-->
-
-                        <div class="portfolio col-3 gutter p-top-10 vue_portfolio example-1">
-
-                            <!--video-->
-                            <div class="">
-                                <div class="class_video portfolio-item cat1 cat4">
-                                    <iframe src="https://www.youtube.com/embed/smgzP8qNXTo" width="800" height="450" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                                <div class="class_video portfolio-item cat2 cat5">
-                                    <iframe src="https://www.youtube.com/embed/ybfWYpYhTQQ" width="800" height="450" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                                <h3 class="portfolio-item cat1 cat2 cat3 cat4 cat5">所有課程</h3>
-                            </div>
-                            <!--video end-->
-
-                            <div class="list" v-for="(item, index) in items">
-                                <div class="portfolio-item cat1" v-bind:class="[{ cat1: is_cat1, cat2: is_cat2, cat3: is_cat3, cat4: is_cat4 }]">
-                                    <div class="thumb">
-                                        <a href="class_content.html">
-                                            <img alt="" v-bind:title="index+1" v-bind:src="'demo/class_list_0' + (index + 1) + '.jpg'">
-                                            <div class="txt_box">
-                                                <i class="number">{{ index + 1 }}</i> 
-                                                <div class="portfolio-description">
-                                                    <h2 class="text-center">{{ item.message }}</h2>
-                                                    <p class="text-right">課程：<span>16</span>分</p>
-                                                </div> 
-                                            </div> 
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="relative">
                             
+                        <div class="row">
+
+                            <div class="col-md-10">
+                                <div class="text-center vertical-align full-width p-tb-200 p-top-0" style="background: #F8E6D8;">
+                                    <a href="#"><img class="p-top-0 p-tb-100"src="assets/images/about/about_bn.jpg" /></a>
+                                </div>
+
+                            </div>
+                            <div class="col-md-2 visible-lg visible-md">
+                                <div class="half-txt">
+                                    <img src="assets/images/about/txt_v.svg" />
+                                </div>
+                            </div>
                         </div>
+                    
+                            <img class="col-md-6" style="position: absolute;bottom: 100px; right:0;padding:0;" src="assets/images/about/about_txt.svg" />
 
                     </div>
                     
+                    <div class="row">
+                        <!--classic image post-->
+                        <div class="blog-classic relative about_content_area m-bot-0 p-bot-0">
+                            <div class="blog-post">
+
+                                <!--page title start-->
+                                <section class="page-title">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <!-- <h4 class="text-uppercase">最新消息</h4> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!--page title end-->
+
+                                <div class="post_content">
+                                    <div class="text-center">
+                                        <img src="demo/news_content_postX.jpg" alt="" />
+                                    </div>
+                                        <ul class="post-meta clearfix">
+                                        <li class="pull-right">2017 / 08 / 10</li>
+                                    </ul>  
+                                    
+                                    <!-- CKEditor -->
+                                    <div class="editor_area">
+                                        <h4 class="text-uppercase">粉漾繽紛手部凝膠+輕保養</h4>
+                                        <p>
+                                            一步一步用心呵護每一根指頭，掃除甘皮、拋光甲面，使指尖摸起來柔嫩軟細緻，再挑選喜愛的款式製作凝膠美甲，給你迷人風采！
+                                        </p>
+
+                                    </div>
+                                    <!-- CKEditor end -->
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--classic image post-->
+                    </div>
+                    
+
                 </div>
-            </div>
-            
-            <div class="text-center col-md-12 pagination_area">
-                <ul class="pagination custom-pagination">
-                    <span class="arrow"><a href="#"> < </a>
-                    </span>
-                    <li class="active"><a href="#">1</a>
-                    </li>
-                    <li><a href="#">2</a>
-                    </li>
-                    <li><a href="#">3</a>
-                    </li>
-                    <li><a href="#">4</a>
-                    </li>
-                    <li><a href="#">5</a>
-                    </li>
-                    <span class="arrow"><a href="#"> > </a>
-                    </span>
-                </ul>
             </div>
 
         </section>
@@ -293,7 +294,7 @@
     <script src="assets/vendor/easy-pie-chart/jquery.easypiechart.min.js"></script>
     <script src="assets/vendor/elasic-slider/jquery.eislideshow.js"></script>
     <script src="assets/vendor/flex-slider/jquery.flexslider-min.js"></script>
-    <!-- <script src="assets/vendor/gmap/jquery.gmap.min.js"></script> -->
+    <script src="assets/vendor/gmap/jquery.gmap.min.js"></script>
     <script src="assets/vendor/images-loaded/imagesloaded.js"></script>
     <script src="assets/vendor/isotope/jquery.isotope.js"></script>
     <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
@@ -310,40 +311,6 @@
     <script src="assets/vendor/wow/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <!-- endinject -->
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".js_click").click();
-        });
-    </script>
-
-    <!-- DEMO -->
-    <script src="demo/vue.js"></script>
-    <script>
-        // var portfoli = new Vue({
-        //     el:'.vue_portfolio'
-        // });
-        
-        var example1 = new Vue({
-            el: '.example-1',
-            data: {
-                items: [
-                { message: '紋繡課程概論' },
-                { message: '時尚水晶裸' },
-                { message: '魔力黑睫眼線' },
-                { message: '女神柔霧眉' },
-                { message: '紋繡寶典' },
-                { message: '蘊眉' }
-                ],
-                is_cat1: true,
-                is_cat2: true,
-                is_cat3: true,
-                is_cat4: false
-            }
-        })
-    </script>
-    <!-- endDEMO -->
-
 </body>
 
 </html>
