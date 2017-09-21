@@ -377,6 +377,13 @@ p {
   border-top: 3px solid #906842;
   transform: translate(-50%, 0); }
 
+.about_area .about_content_area h4 {
+  font-size: 22px; }
+
+.about_area .about_content_area p {
+  line-height: 2;
+  font-size: 17px; }
+
 .portfolio-with-title.blog-m .portfolio-item .portfolio-title h4 {
   padding: 3px 5px;
   background: #fef4ef;
