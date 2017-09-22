@@ -762,6 +762,15 @@ p {
     height: 50px;
     background: #647384; }
 
+.lesson_area .line_center:before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  width: 2px;
+  height: 40px;
+  background: #647384; }
+
 .category_area .product-list {
   min-height: auto; }
 

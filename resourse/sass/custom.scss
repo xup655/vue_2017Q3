@@ -1069,6 +1069,17 @@ p {
       background: #647384;
     }
   }
+  .line_center {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      width: 2px;
+      height: 40px;
+      background: #647384;
+    }
+  }
 }
 
 // categoery
