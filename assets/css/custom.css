@@ -12,6 +12,9 @@ p {
 .font_KaiU {
   font-family: "標楷體"; }
 
+.font_MSJH {
+  font-family: "微軟正黑體"; }
+
 .container-fluid {
   font-family: "標楷體"; }
   @media screen and (min-width: 1200px) {
@@ -53,11 +56,21 @@ p {
     padding: 3px 5px;
     line-height: 1;
     font-size: 18px; }
-  .menuzord-menu > li:hover > a, .menuzord-menu > li.active > a {
+  .menuzord-menu > li:hover > a {
     color: #82645C; }
     @media screen and (min-width: 769px) {
-      .menuzord-menu > li:hover > a, .menuzord-menu > li.active > a {
+      .menuzord-menu > li:hover > a {
         border-bottom: 1px solid #C6C6C6; } }
+  @media screen and (min-width: 769px) {
+    .menuzord-menu > li.active {
+      background: #ad8066; } }
+  .menuzord-menu > li.active > a {
+    color: #82645C;
+    cursor: default; }
+    @media screen and (min-width: 769px) {
+      .menuzord-menu > li.active > a {
+        border: 0;
+        color: #fff; } }
 
 .l-navbar-wrapper_has-sticky .menuzord-menu > li {
   line-height: 60px; }
@@ -743,17 +756,18 @@ p {
   color: #647384; }
   .lesson_area h1 p {
     font-size: 18px; }
-    .lesson_area h1 p:before {
-      content: "";
-      display: inline-block;
-      margin-left: 150px;
-      width: 50px;
-      height: 1px;
-      background: #666; }
+    @media screen and (min-width: 769px) {
+      .lesson_area h1 p:before {
+        content: "";
+        display: inline-block;
+        margin-left: 150px;
+        width: 50px;
+        height: 1px;
+        background: #666; } }
 
 .lesson_area .title_bar {
   position: relative; }
-  .lesson_area .title_bar:before {
+  .lesson_area .title_bar:after {
     content: "";
     position: absolute;
     left: -20px;
@@ -762,7 +776,17 @@ p {
     height: 50px;
     background: #647384; }
 
-.lesson_area .line_center:before {
+.lesson_area .line_center:before, .lesson_area .line_center:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 500px;
+  background: #f2f2f2; }
+
+.lesson_area .line_center:after {
   content: "";
   position: absolute;
   top: 60px;
@@ -770,6 +794,40 @@ p {
   width: 2px;
   height: 40px;
   background: #647384; }
+
+@media screen and (min-width: 992px) {
+  .lesson_area .overtop_img {
+    margin-top: -50px; } }
+
+@media screen and (min-width: 992px) {
+  .lesson_area .colse_img {
+    padding: 0;
+    width: 30vw;
+    height: 30vw; } }
+
+@media screen and (min-width: 1600px) {
+  .lesson_area .colse_img {
+    padding: 0;
+    width: 20vw;
+    height: 20vw; } }
+
+.lesson_area .colse_img + .colse_img {
+  padding-left: 50px;
+  padding-right: 50px;
+  background: #647384; }
+  @media screen and (max-width: 992px) {
+    .lesson_area .colse_img + .colse_img {
+      padding-left: 10px;
+      padding-right: 10px; } }
+  @media screen and (max-width: 480px) {
+    .lesson_area .colse_img + .colse_img > * {
+      padding-top: 60px; } }
+
+.mfp-counter {
+  opacity: 0; }
+
+.img_shadow {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); }
 
 .category_area .product-list {
   min-height: auto; }
