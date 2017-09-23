@@ -1139,6 +1139,32 @@ p {
       }
     }
   }
+  .float_step5_txt {
+    position: absolute;
+    top:-220px;
+    /*left:50%;transform:translate(-50%,0);margin-left:-250px;*/
+    width:350px;
+    @media screen and (max-width:992px) {
+      position: static;
+      max-width:100%;
+    }
+  }
+  .float_step5 {
+    position: absolute;
+    top:-250px;
+    /*left:50%;transform:translate(-50%,0);margin-left:250px;*/
+    display:flex;
+    justify-content:center;
+    margin-left:0;
+    padding-right:0;
+    width:300px;
+    background: #647384;
+    @media screen and (max-width:992px) {
+      position: static;
+      margin-bottom: 50px;
+      max-width:100%;
+    }
+  }
 }
 .mfp-counter {
   opacity: 0;
