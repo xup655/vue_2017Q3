@@ -77,6 +77,9 @@ p {
   .l-navbar-wrapper_has-sticky .menuzord-menu > li > a {
     line-height: 1; }
 
+.menuzord-menu .indicator {
+  display: none; }
+
 #footer {
   background: #f9e7d9; }
   #footer .footer_list {
