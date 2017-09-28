@@ -176,23 +176,29 @@
 
                         <div class="col-md-3">
                             <!--product category-->
-                            <div class="widget">
+                            <div class="widget widget_area">
                                 <div class="heading-title-alt text-left">
                                     <h5 style="font-size: 24px;">產品類別</h5>
                                     <h6 style="color: #bebebe;">product description</h6>
                                 </div>
-                                <ul class="widget-category">
-                                    <li class=" heading-border-bottom"><a href="#">色彩精華乳</a>
+                                <ul class="widget-category vue_dropLeft">
+                                    <li class="" :class="{ active: isActive }" @click="activeLink($event)">
+                                        <a href="javascript: void(0)"><img v-show="isActive" src="assets/images/arrow.png">色彩精華乳</a>
+                                        <ul class="dropdown">
+                                            <li><a href="product.html">飄眉專用</a></li>
+                                            <li><a href="product.html">霧眉專用</a></li>
+                                            <li><a href="product.html">染眉專用</a></li>
+                                        </ul>
                                     </li>
-                                    <li class=" heading-border-bottom"><a href="#">紋繡色乳</a>
+                                    <li class=""><a href="product.html">紋繡色乳</a>
                                     </li>
-                                    <li class=" heading-border-bottom"><a href="#">紋繡機器</a>
+                                    <li class=""><a href="product.html">紋繡機器</a>
                                     </li>
-                                    <li class=" heading-border-bottom"><a href="#">拋棄式針類</a>
+                                    <li class=""><a href="product.html">拋棄式針類</a>
                                     </li>
-                                    <li class=" heading-border-bottom"><a href="#">紋繡專業商品</a>
+                                    <li class=""><a href="product.html">紋繡專業商品</a>
                                     </li>
-                                    <li class=" heading-border-bottom"><a href="#">輔助用品</a>
+                                    <li class=""><a href="product.html">輔助用品</a>
                                     </li>
                                 </ul>
                             </div>
@@ -202,8 +208,8 @@
 
                         <div class="col-md-9">
                             <div class="row vue_product">
-                                <div v-for="n in 3">
-                                    <div class="col-md-6">
+                                <div class="clearfix" style="border-bottom: 3px solid #F7E5D7" v-for="n in 3">
+                                    <div class="col-md-6 product_box">
                                         <!--product list-->
                                         <div class="product-list">
                                             <div class="product-img">
@@ -226,7 +232,7 @@
                                         </div>
                                         <!--product list-->
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 product_box">
                                         <!--product list-->
                                         <div class="product-list">
                                             <div class="product-img">
@@ -346,6 +352,25 @@
         new Vue({
             el:'.vue_product'
         });
+
+        var dropdownLeft = new Vue({
+            el: '.vue_dropLeft',
+            data: {
+                isActive: false
+            },
+            methods: {
+                activeLink(event) {
+                    // console.log(event.target.parentElement.className )
+                    // if(event.target.parentElement.className == "heading-border-bottom") {
+                    //     event.target.parentElement.className = "heading-border-bottom active";
+                    // }
+                    // else {
+                    //     event.target.parentElement.className = "heading-border-bottom";
+                    // }
+                    this.isActive = this.isActive ? false : true
+                }
+            }
+        })
     </script>
     <!-- endDEMO -->
 </body>
