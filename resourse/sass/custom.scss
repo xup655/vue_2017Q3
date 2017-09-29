@@ -1392,12 +1392,14 @@ p {
     .dropdown {
       display: none;
       margin-top: 10px;
-      padding-left: 20px;
+      padding: 0;
       list-style-type: none;
       li {
         margin-bottom: 0;
         float: none;
         > a {
+          display: block;
+          padding-left: 20px;
           color: #817259;
           &:before {
             display: none;

@@ -1012,12 +1012,14 @@ p {
 .category_area .widget-category .dropdown {
   display: none;
   margin-top: 10px;
-  padding-left: 20px;
+  padding: 0;
   list-style-type: none; }
   .category_area .widget-category .dropdown li {
     margin-bottom: 0;
     float: none; }
     .category_area .widget-category .dropdown li > a {
+      display: block;
+      padding-left: 20px;
       color: #817259; }
       .category_area .widget-category .dropdown li > a:before {
         display: none; }
