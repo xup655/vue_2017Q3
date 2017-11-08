@@ -10,7 +10,7 @@
     <!--favicon icon-->
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
-    <title>關於我們</title>
+    <title>會員登入</title>
 
     <!--common style-->
     <link href='http://fonts.googleapis.com/css?family=Abel|Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700,700italic,900,900italic,200italic,200' rel='stylesheet' type='text/css'>
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/default-theme.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-    <!-- endinject -->
+<!-- endinject -->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -148,12 +148,12 @@
                             <li><a href="categoery.html">產品資訊</a>
                             </li>
 
-                            <li><a href="team.html">前往協會</a></li>
+                            <li><a href="#">前往協會</a></li>
 
                             <li class="nav-divider" aria-hidden="true"><a href="javascript:void(0)">|</a>
                             </li>
 
-                            <li class="cart-info"><a href="login.html">會員登入</a>
+                            <li class="active"><a href="login.html">會員登入</a>
                             </li>
 
                         </ul>
@@ -166,63 +166,89 @@
         </header>
         <!--header end-->
 
-        <!--hero section-->
-        <!-- <div class="text-center vertical-align full-width">
-            <a href="#"><img src="assets/images/about/about_bn.jpg" /></a>
-        </div> -->
-        <!--hero section-->
-
-
-        <!--body content start-->
-        <section class="body-content about_area">
-
+        <section class="body-content ">
             <div class="page-content">
-                
                 <div class="container">
-
-                    <div class="relative">
-                            
-                        <div class="row p-top-100">
-
-                            <div class="col-md-10">
-                                <img class="half-txt" style="position: absolute;z-index:1;top:-90px;left:50px;" src="assets/images/about/about=.svg">
-                                <div class="text-center vertical-align full-width p-tb-200 p-top-0" style="background: #F8E6D8;">
-                                    <a href="#"><img class="p-top-0 p-tb-100"src="assets/images/about/about_bn.jpg" /></a>
-                                </div>
-
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="article-header heading-border-bottom border-rice text-center">
+                                <img src="assets/img/register.png" />
                             </div>
-                            <div class="col-md-2 visible-lg visible-md">
-                                <div class="half-txt">
-                                    <img src="assets/images/about/txt_v.svg" />
+                            <div class="login register ">
+                                <div class="btn-rounded">
+                                    <form action="http://gti-dev.funcode.win/user/register" method="post">
+                                        <input type="hidden" name="_token" value="5iCmDfLFYYbkSTqBPhuJYuRO8eVqHgruiCA5XixJ">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="email">信箱</label>
+                                                    <input class="form-control" placeholder="請輸入信箱（即會員帳號）" name="email" type="email" id="email">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="password">密碼</label>
+                                                    <input class="form-control" placeholder="請輸入 6 位以上密碼" name="password" type="password" value="" id="password">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="password_confirmation">確認密碼</label>
+                                                    <input class="form-control" placeholder="請重複輸入您的密碼" name="password_confirmation" type="password" value="" id="password_confirmation">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="fullName">姓名</label>
+                                                    <input class="form-control" placeholder="請輸入您的姓名" name="fullName" type="text" id="fullName">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="gender">性別</label>
+                                                    <select class="form-control" id="gender" name="gender"><option selected="selected" value="">請選擇性別</option><option value="0">女</option><option value="1">男</option></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="phone">市話</label>
+                                                    <input class="form-control" placeholder="請輸入您的室內電話 e.g. 0212345678" name="phone" type="tel" id="phone">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="mobile">手機</label>
+                                                    <input class="form-control" placeholder="請輸入您的行動電話 e.g. 0910321654" name="mobile" type="tel" id="mobile">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="address">聯絡地址</label>
+                                                    <input class="form-control" placeholder="請輸入您的聯絡地址" name="address" type="text" id="address">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input id="accepted" name="accepted" type="checkbox" value="1">
+                                                    <label for="accepted">我同意隱私及服務條款</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <button class="btn btn-small btn-dark-solid full-width" type="submit">送出
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                    
-                            <img class="col-md-6" style="position: absolute;bottom: 100px; right:0;padding:0;" src="assets/images/about/about_txt.svg" />
-
                     </div>
-                    
-                    <div class="row relative about_content_area m-top-50 p-tb-150 p-bot-0">
-
-                        <div class="col-md-6">
-                                <iframe class="full-width" src="https://www.youtube.com/embed/smgzP8qNXTo" width="800" height="300" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-md-5 font_KaiU p-top-50">
-                            <h4>整合了有系統、規畫的教學模式</h4>
-                            <p>
-                                    讓初學者從零到有，漸而成為專業的紋繡師
-                                    婕媚兒對於美和安全的挑剔
-                                    產品嚴格把關，並通過了SGS認證
-                                    不只是學生、客人皆有品質與技術上的保證
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
 
+            </div>
         </section>
-        <!--body content end-->
 
         <!--footer start 1-->
         <footer id="footer">
@@ -285,6 +311,15 @@
     <script src="assets/vendor/wow/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
     <!-- endinject -->
+
+    <!-- DEMO -->
+    <script src="demo/vue.js"></script>
+    <script>
+        new Vue({
+            el:'.vue_case'
+        });
+    </script>
+    <!-- endDEMO -->
 </body>
 
 </html>
