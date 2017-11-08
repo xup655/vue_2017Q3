@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body,
 .tab-content {
-  font-family: "微軟正黑體"; }
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 
 * {
   word-break: break-all; }
@@ -43,46 +43,44 @@ p {
   border-top: 1px solid;
   border-color: #d9a97b; }
 
-.font_KaiU {
-  font-family: "標楷體"; }
-
 .font_MSJH {
   font-family: "微軟正黑體"; }
 
-.container-fluid {
-  font-family: "標楷體"; }
-  @media screen and (min-width: 1200px) {
-    .container-fluid .menuzord-menu > li {
-      margin-left: 10px; }
-      .container-fluid .menuzord-menu > li > a {
-        font-size: 22px; }
-    .container-fluid .menuzord-menu ul.dropdown > li {
-      font-size: 18px; } }
+@media screen and (min-width: 1200px) {
+  .container-fluid .menuzord-menu > li {
+    margin-left: 10px; }
+    .container-fluid .menuzord-menu > li > a {
+      font-size: 18px; }
+  .container-fluid .menuzord-menu ul.dropdown > li {
+    font-size: 18px; } }
+
+.container-fluid .logo-brand {
+  font-weight: normal; }
+  .container-fluid .logo-brand h3 {
+    display: inline;
+    font-size: 21px; }
+  .container-fluid .logo-brand .icon-calendar {
+    vertical-align: middle;
+    font-weight: bold; }
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .container-fluid .logo-brand {
-    font-weight: normal; }
+    max-height: 80px; }
     .container-fluid .logo-brand h3 {
-      display: inline;
-      font-size: 21px; }
-    .container-fluid .logo-brand .icon-calendar {
-      vertical-align: middle;
-      font-weight: bold; }
-  @media screen and (min-width: 769px) and (max-width: 991px) {
-    .container-fluid .logo-brand {
-      max-height: 80px; }
-      .container-fluid .logo-brand h3 {
-        font-size: 16px; }
-    .container-fluid .menuzord-menu > li {
-      margin-left: 0; }
-      .container-fluid .menuzord-menu > li > a {
-        padding: 3px;
-        font-size: 15px; } }
-  @media screen and (max-width: 768px) {
-    .container-fluid .logo-brand h3 {
-      font-size: 0; }
-    .container-fluid .logo-brand .icon-calendar {
-      font-size: 21px;
-      position: relative;
-      top: -5px; } }
+      font-size: 16px; }
+  .container-fluid .menuzord-menu > li {
+    margin-left: 0; }
+    .container-fluid .menuzord-menu > li > a {
+      padding: 3px;
+      font-size: 15px; } }
+
+@media screen and (max-width: 768px) {
+  .container-fluid .logo-brand h3 {
+    font-size: 0; }
+  .container-fluid .logo-brand .icon-calendar {
+    font-size: 21px;
+    position: relative;
+    top: -5px; } }
 
 .menuzord-menu > li {
   line-height: 100px; }
@@ -259,10 +257,8 @@ p {
   .logo_menu_area .menu {
     margin-left: 50px;
     font-size: 22px; }
-  .logo_menu_area a {
-    color: #424242; }
-    .logo_menu_area a .text-uppercase {
-      letter-spacing: 1px; }
+    .logo_menu_area .menu a {
+      opacity: 0; }
   @media screen and (max-width: 991px) {
     .logo_menu_area {
       display: block;
@@ -311,11 +307,11 @@ p {
   .post-parallax .section_text {
     position: relative;
     padding: 0 40px;
-    font-family: "標楷體"; }
+    line-height: 1.4;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     .post-parallax .section_text h4 {
-      font-size: 21px; }
+      font-size: 26px; }
     .post-parallax .section_text p {
-      line-height: 26px;
       font-size: 16px; }
   .post-parallax .orange-overlay {
     top: -1px;
