@@ -10,14 +10,12 @@ p {
   margin: 0; }
 
 .login-list {
-  padding: 0;
-}
+  padding: 0; }
 
-.login-list li{
+.login-list li {
   list-style: none;
   margin-left: 10px;
-  line-height: 25px;
-}
+  line-height: 25px; }
 
 .login-list li:before {
   color: red;
@@ -25,30 +23,25 @@ p {
   left: -5px;
   top: -3px;
   content: '\f00c';
-  font-family: 'FontAwesome';
-}
+  font-family: 'FontAwesome'; }
 
 .border-rice {
   border-bottom: 3px solid #d9a97b;
-  border-color: #d9a97b;
-}
+  border-color: #d9a97b; }
 
 .btn-fb {
   color: #fff;
   border-color: #3D5A98;
-  background-color: #3D5A98;
-}
+  background-color: #3D5A98; }
 
 .btn-gplus {
   color: #fff;
   border-color: #DC4A38;
-  background-color: #DC4A38;
-}
+  background-color: #DC4A38; }
 
 .article-header {
   border-top: 1px solid;
-  border-color: #d9a97b;
-}
+  border-color: #d9a97b; }
 
 .font_KaiU {
   font-family: "標楷體"; }
