@@ -560,10 +560,16 @@ p {
       position: relative;
       margin-bottom: 80px;
       font-size: 26px;
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        width: 100%;
+      }
       span {
         margin-left: 10px;
         font-size: 18px;
         &.eng_name {}
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+          display: block;
+        }
         @media screen and (min-width: 768px) and (max-width: 991px) {
           margin: 0;
           padding: 0;
