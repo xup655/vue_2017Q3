@@ -67,7 +67,7 @@ p {
       > li {
         margin-left: 10px;
         > a {
-          font-size: 18px;
+          font-size: 20px;
         }
       }
       ul.dropdown {
@@ -79,9 +79,20 @@ p {
   }
   .logo-brand {
     font-weight: normal;
+    line-height: 70px;
     h3 {
       display: inline;
       font-size: 21px;
+      > span {
+        position: relative;
+        top: -5px;
+        padding: 10px 30px;
+        background-image:url('../images/nav/calendar.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center right;
+        font-size: 0;
+      }
     }
     .icon-calendar {
       vertical-align: middle;
@@ -91,6 +102,7 @@ p {
   @media screen and (min-width: 769px) and (max-width: 991px) {
     .logo-brand {
       max-height: 80px;
+      line-height: 60px;
       h3 {
         font-size: 16px;
       }
@@ -107,6 +119,7 @@ p {
   }
   @media screen and (max-width: 768px) {
     .logo-brand {
+      line-height: 50px;
       h3 {
         font-size: 0;
       }
@@ -121,12 +134,21 @@ p {
 .menuzord-menu {
   > li {
     // margin-left: 5px;
-    line-height: 100px;
+    line-height: 60px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media screen and (max-width: 768px) {
+      background: none !important;
+    }
     > .megamenu {
       line-height: 1;
     }
     > a {
-      padding: 3px 5px;
+      @media screen and (min-width: 769px) {
+        opacity: 0;
+      }
+      padding: 0 10px;
       line-height: 1;
       font-size: 18px;
     }
@@ -140,7 +162,7 @@ p {
     }
     &.active {
       @media screen and (min-width: 769px) {
-        background: #ad8066;
+        background-color: #ad8066;
       }
       > a {
         color: #82645C;
@@ -367,8 +389,17 @@ p {
   .menu {
     margin-left: 50px;
     font-size: 22px;
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      + .menu {
+        margin-left: 30px;
+      }
+    }
     a {
       opacity: 0;
+      @media screen and (max-width: 991px) {
+        display: block;
+        height: 50px;
+      }
     }
   }
   // a {
@@ -409,7 +440,7 @@ p {
   background: #f2f2f2;
   h4 {
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 26px;
   }
   h5 {
     margin: 0;
@@ -441,7 +472,7 @@ p {
   }
   .section_text {
     position: relative;
-    padding: 0 40px;
+    padding: 0 10px;
     line-height: 1.4;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     h4 {
@@ -509,10 +540,12 @@ p {
     }
   }
   .btn {
-    padding: 10px 30px;
+    padding: 20px 80px;
     background: #906842;
-    font-size: 18px;
-    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: center;
+    font-size: 0;
   }
 }
 .group_area {

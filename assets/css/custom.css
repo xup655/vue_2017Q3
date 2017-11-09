@@ -50,22 +50,33 @@ p {
   .container-fluid .menuzord-menu > li {
     margin-left: 10px; }
     .container-fluid .menuzord-menu > li > a {
-      font-size: 18px; }
+      font-size: 20px; }
   .container-fluid .menuzord-menu ul.dropdown > li {
     font-size: 18px; } }
 
 .container-fluid .logo-brand {
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: 70px; }
   .container-fluid .logo-brand h3 {
     display: inline;
     font-size: 21px; }
+    .container-fluid .logo-brand h3 > span {
+      position: relative;
+      top: -5px;
+      padding: 10px 30px;
+      background-image: url("../images/nav/calendar.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center right;
+      font-size: 0; }
   .container-fluid .logo-brand .icon-calendar {
     vertical-align: middle;
     font-weight: bold; }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
   .container-fluid .logo-brand {
-    max-height: 80px; }
+    max-height: 80px;
+    line-height: 60px; }
     .container-fluid .logo-brand h3 {
       font-size: 16px; }
   .container-fluid .menuzord-menu > li {
@@ -75,21 +86,32 @@ p {
       font-size: 15px; } }
 
 @media screen and (max-width: 768px) {
-  .container-fluid .logo-brand h3 {
-    font-size: 0; }
-  .container-fluid .logo-brand .icon-calendar {
-    font-size: 21px;
-    position: relative;
-    top: -5px; } }
+  .container-fluid .logo-brand {
+    line-height: 50px; }
+    .container-fluid .logo-brand h3 {
+      font-size: 0; }
+    .container-fluid .logo-brand .icon-calendar {
+      font-size: 21px;
+      position: relative;
+      top: -5px; } }
 
 .menuzord-menu > li {
-  line-height: 100px; }
+  line-height: 60px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media screen and (max-width: 768px) {
+    .menuzord-menu > li {
+      background: none !important; } }
   .menuzord-menu > li > .megamenu {
     line-height: 1; }
   .menuzord-menu > li > a {
-    padding: 3px 5px;
+    padding: 0 10px;
     line-height: 1;
     font-size: 18px; }
+    @media screen and (min-width: 769px) {
+      .menuzord-menu > li > a {
+        opacity: 0; } }
   .menuzord-menu > li:hover > a {
     color: #82645C; }
     @media screen and (min-width: 769px) {
@@ -97,7 +119,7 @@ p {
         border-bottom: 1px solid #C6C6C6; } }
   @media screen and (min-width: 769px) {
     .menuzord-menu > li.active {
-      background: #ad8066; } }
+      background-color: #ad8066; } }
   .menuzord-menu > li.active > a {
     color: #82645C;
     cursor: default; }
@@ -257,8 +279,15 @@ p {
   .logo_menu_area .menu {
     margin-left: 50px;
     font-size: 22px; }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      .logo_menu_area .menu + .menu {
+        margin-left: 30px; } }
     .logo_menu_area .menu a {
       opacity: 0; }
+      @media screen and (max-width: 991px) {
+        .logo_menu_area .menu a {
+          display: block;
+          height: 50px; } }
   @media screen and (max-width: 991px) {
     .logo_menu_area {
       display: block;
@@ -286,7 +315,7 @@ p {
   background: #f2f2f2; }
   .introduce_area h4 {
     margin-bottom: 10px;
-    font-size: 22px; }
+    font-size: 26px; }
   .introduce_area h5 {
     margin: 0;
     font-size: 16px; }
@@ -306,7 +335,7 @@ p {
       margin-top: 10px; } }
   .post-parallax .section_text {
     position: relative;
-    padding: 0 40px;
+    padding: 0 10px;
     line-height: 1.4;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
     .post-parallax .section_text h4 {
@@ -361,10 +390,12 @@ p {
   box-shadow: -3px -3px 0 #7C6450; }
 
 .lesson_box .btn {
-  padding: 10px 30px;
+  padding: 20px 80px;
   background: #906842;
-  font-size: 18px;
-  color: #fff; }
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-position: center;
+  font-size: 0; }
 
 .group_area {
   display: block;
