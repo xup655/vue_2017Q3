@@ -52,7 +52,7 @@ p {
     .container-fluid .menuzord-menu > li > a {
       font-size: 20px; }
   .container-fluid .menuzord-menu ul.dropdown > li {
-    font-size: 18px; } }
+    font-size: 14px; } }
 
 .container-fluid .logo-brand {
   font-weight: normal;
@@ -61,8 +61,6 @@ p {
     display: inline;
     font-size: 21px; }
     .container-fluid .logo-brand h3 > span {
-      position: relative;
-      top: -5px;
       padding: 10px 30px;
       background-image: url("../images/nav/calendar.svg");
       background-size: cover;
@@ -70,6 +68,8 @@ p {
       background-position: center right;
       font-size: 0; }
   .container-fluid .logo-brand .icon-calendar {
+    position: relative;
+    top: 5px;
     vertical-align: middle;
     font-weight: bold; }
 
@@ -96,6 +96,7 @@ p {
       top: -5px; } }
 
 .menuzord-menu > li {
+  margin-top: 15px;
   line-height: 60px;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -119,7 +120,7 @@ p {
         border-bottom: 1px solid #C6C6C6; } }
   @media screen and (min-width: 769px) {
     .menuzord-menu > li.active {
-      background-color: #ad8066; } }
+      background-color: #d6b161; } }
   .menuzord-menu > li.active > a {
     color: #82645C;
     cursor: default; }
@@ -382,15 +383,12 @@ p {
   .section_lesson img {
     width: 100%; }
 
-.lesson_box + .lesson_box {
-  border-left: 1px solid #D3D3D3; }
-
 .lesson_box .lesson_img img {
   border: 1px solid #7C6450;
   box-shadow: -3px -3px 0 #7C6450; }
 
 .lesson_box .btn {
-  padding: 20px 80px;
+  padding: 30px 100px;
   background: #906842;
   background-repeat: no-repeat;
   background-size: 50% auto;
