@@ -67,6 +67,10 @@ p {
       background-repeat: no-repeat;
       background-position: center right;
       font-size: 0; }
+      @media screen and (max-width: 768px) {
+        .container-fluid .logo-brand h3 > span {
+          position: relative;
+          top: -3px; } }
   .container-fluid .logo-brand .icon-calendar {
     position: relative;
     top: 5px;
@@ -239,6 +243,10 @@ p {
   padding: 5px;
   color: #6A3906; }
 
+@media screen and (max-width: 768px) {
+  .index_banner {
+    margin-top: 50px; } }
+
 .img_smoke {
   position: absolute;
   right: 0;
@@ -308,7 +316,7 @@ p {
   @media screen and (max-width: 480px) {
     .logo_menu_area .menu {
       float: none;
-      margin: 20px 0 0;
+      margin: -10px auto -50px;
       width: 100%; } }
 
 .introduce_area {

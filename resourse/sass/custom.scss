@@ -90,6 +90,10 @@ p {
         background-repeat: no-repeat;
         background-position: center right;
         font-size: 0;
+        @media screen and (max-width: 768px) {
+          position: relative;
+          top: -3px;
+        }
       }
     }
     .icon-calendar {
@@ -345,6 +349,11 @@ p {
 }
 
 // index
+.index_banner {
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+  }
+}
 .img_smoke {
   position: absolute;
   right: 0;
@@ -431,7 +440,7 @@ p {
   @media screen and (max-width: 480px) {
     .menu {
       float: none;
-      margin: 20px 0 0;
+      margin: -10px auto -50px;
       width: 100%;
     }
   }
