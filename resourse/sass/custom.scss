@@ -188,7 +188,18 @@ p {
     }
   }
   .indicator {
-    display: none;
+    @media screen and (min-witdh: 769px) {
+      display: none;
+    }
+  }
+  ul.dropdown {
+    li {
+      a {
+        padding: 0;
+        line-height: 50px;
+        font-size: 14px;
+      }
+    }
   }
 }
 
@@ -541,9 +552,18 @@ p {
   }
 }
 .lesson_box {
-  // + .lesson_box {
-  //   border-left: 1px solid #D3D3D3;
-  // }
+  @media screen and (max-width: 768px) {
+    padding: 0 50px;
+  }
+  @media screen and (min-width: 769px) {
+    &.lesson_box_left {
+      margin-right: 8%;
+    }
+    &.lesson_box_right {
+      margin-right: 0;
+      margin-left: 8%;
+    }
+  }
   .lesson_img {
     img {
       border: 1px solid #7C6450;
@@ -551,6 +571,10 @@ p {
     }
   }
   .btn {
+    @media screen and (max-width: 768px) {
+      margin: 10px 0 20px;
+      padding: 20px 80px;
+    }
     padding: 30px 100px;
     background: #906842;
     background-repeat: no-repeat;
@@ -577,7 +601,11 @@ p {
       span {
         margin-left: 10px;
         font-size: 18px;
-        &.eng_name {}
+        &.eng_name {
+          @media screen and (max-width: 768px) {
+            display: block;
+          }
+        }
         @media screen and (min-width: 992px) and (max-width: 1199px) {
           display: block;
         }
@@ -593,6 +621,10 @@ p {
         width: 50px;
         height: 2px;
         background: #a6a6a6;
+        @media screen and (max-width: 1199px) {
+          left: 0;
+          width: 100%;
+        }
       }
     }
     img {

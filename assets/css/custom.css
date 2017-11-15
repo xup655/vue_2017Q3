@@ -138,8 +138,14 @@ p {
   .l-navbar-wrapper_has-sticky .menuzord-menu > li > a {
     line-height: 1; }
 
-.menuzord-menu .indicator {
-  display: none; }
+@media screen and (min-witdh: 769px) {
+  .menuzord-menu .indicator {
+    display: none; } }
+
+.menuzord-menu ul.dropdown li a {
+  padding: 0;
+  line-height: 50px;
+  font-size: 14px; }
 
 #footer {
   background: #f9e7d9; }
@@ -389,6 +395,17 @@ p {
   .section_lesson img {
     width: 100%; }
 
+@media screen and (max-width: 768px) {
+  .lesson_box {
+    padding: 0 50px; } }
+
+@media screen and (min-width: 769px) {
+  .lesson_box.lesson_box_left {
+    margin-right: 8%; }
+  .lesson_box.lesson_box_right {
+    margin-right: 0;
+    margin-left: 8%; } }
+
 .lesson_box .lesson_img img {
   border: 1px solid #7C6450;
   box-shadow: -3px -3px 0 #7C6450; }
@@ -400,6 +417,10 @@ p {
   background-size: 50% auto;
   background-position: center;
   font-size: 0; }
+  @media screen and (max-width: 768px) {
+    .lesson_box .btn {
+      margin: 10px 0 20px;
+      padding: 20px 80px; } }
 
 .group_area {
   display: block;
@@ -418,6 +439,9 @@ p {
     .group_area .group_box h3 span {
       margin-left: 10px;
       font-size: 18px; }
+      @media screen and (max-width: 768px) {
+        .group_area .group_box h3 span.eng_name {
+          display: block; } }
       @media screen and (min-width: 992px) and (max-width: 1199px) {
         .group_area .group_box h3 span {
           display: block; } }
@@ -432,6 +456,10 @@ p {
       width: 50px;
       height: 2px;
       background: #a6a6a6; }
+      @media screen and (max-width: 1199px) {
+        .group_area .group_box h3:before {
+          left: 0;
+          width: 100%; } }
   .group_area .group_box img {
     max-width: 100%; }
   .group_area .group_box ul {
