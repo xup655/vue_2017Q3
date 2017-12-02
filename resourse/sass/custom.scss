@@ -1,6 +1,6 @@
 body,
 .tab-content {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "新細明體";
 }
 * {
   word-break: break-all;
@@ -13,10 +13,10 @@ p {
   padding: 0;
 }
 
-.login-list li{
+.login-list li {
   list-style: none;
   margin-left: 10px;
-  line-height: 25px;
+  line-height: 30px;
 }
 
 .login-list li:before {
@@ -25,7 +25,7 @@ p {
   left: -5px;
   top: -3px;
   content: '\f00c';
-  font-family: 'FontAwesome';
+  font-family: "新細明體";
 }
 
 .border-rice {

@@ -98,9 +98,9 @@
  ===============================================*/
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1.5;
-  color: #323232;
-  font-size: 15px;
+  line-height: 1.875;
+  color: #969697;
+  font-size: 18px;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -116,7 +116,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333;
+  color: #796a56;
   line-height: 1.5;
   margin: 0 0 30px 0;
   font-weight: normal; }
@@ -153,7 +153,7 @@ iframe {
 p {
   margin: 0 0 30px;
   line-height: 30px;
-  color: #7e7e7e; }
+  color: #969697; }
 
 hr {
   margin-top: 0px;
@@ -1982,7 +1982,7 @@ body {
   letter-spacing: 4px; }
 
 .portfolio-description p {
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 0;
   text-transform: uppercase;
   /*font-family: 'Abel', sans-serif;*/
@@ -2054,7 +2054,7 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #222; }
+  color:  #796a56; }
 
 .portfolio-with-title .portfolio-title h3,
 .portfolio-with-title .portfolio-title h3 a {
@@ -2795,7 +2795,7 @@ header li.nav-icon .cart-table-list a {
   font-weight: 600; }
 
 .product-title h5 a {
-  color: #222; }
+  color:  #796a56; }
 
 .product-price {
   font-size: 18px;
@@ -3113,7 +3113,7 @@ header li.nav-icon .cart-table-list a {
   margin-right: 10px;
   color: #a7a7a7;
   text-transform: uppercase;
-  font-size: 12px; }
+  font-size: 14px; }
 
 .post-meta li a {
   margin-right: 5px;
