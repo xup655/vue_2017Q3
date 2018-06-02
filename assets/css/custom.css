@@ -52,7 +52,9 @@ p {
     .container-fluid .menuzord-menu > li > a {
       font-size: 20px; }
   .container-fluid .menuzord-menu ul.dropdown > li {
-    font-size: 14px; } }
+    font-size: 14px; }
+    .container-fluid .menuzord-menu ul.dropdown > li > a {
+      padding: 0 20px; } }
 
 .container-fluid .logo-brand {
   font-weight: normal;
@@ -518,8 +520,10 @@ p {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#edeeee',GradientType=1 ); }
   .team_area .team_block .team_img_block,
   .team_area .team_block .team_txt_block {
-    height: 300px; }
+    height: 470px; }
   .team_area .team_block .team_img {
+    position: relative;
+    z-index: 2;
     height: 100%; }
   @media screen and (max-width: 991px) {
     .team_area .team_block .pull-right {
@@ -553,9 +557,10 @@ p {
       padding-left: 0;
       background-image: url("../images/team/team_txt_bg_01.png");
       text-align: left; }
-    .team_area .team_block:nth-child(odd) .team_txt_list li:before {
-      left: -50px;
-      right: auto; }
+    @media screen and (min-width: 992px) {
+      .team_area .team_block:nth-child(odd) .team_txt_list li:before {
+        left: -50px;
+        right: auto; } }
   .team_area .team_block h2 {
     position: relative;
     margin-bottom: 0;
@@ -910,7 +915,7 @@ p {
     .class_content_area ul.nav-tabs > li > a {
       background: #FDF0EC;
       border: 0;
-      font-size: 16px;
+      font-size: 24px;
       color: #B18A6E; }
       .class_content_area ul.nav-tabs > li > a:hover, .class_content_area ul.nav-tabs > li > a:focus {
         background: #FDF0EC;
@@ -965,6 +970,20 @@ p {
     text-align: center;
     font-size: 25px;
     color: #B0B0B1; }
+
+.lesson_cont_img {
+  margin-bottom: 10px;
+  padding: 0;
+  max-width: 100%;
+  height: auto !important; }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    .lesson_cont_img {
+      margin-bottom: 15px;
+      width: 75% !important; } }
+  @media screen and (max-width: 480px) {
+    .lesson_cont_img {
+      max-width: 100%;
+      height: auto !important; } }
 
 .lesson_area h1 {
   color: #647384; }

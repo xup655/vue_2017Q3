@@ -177,8 +177,14 @@
                             <!--product category-->
                             <div class="widget widget_area">
                                 <div class="heading-title-alt text-left">
-                                    <h5 style="font-size: 24px;">產品類別</h5>
-                                    <h6 style="color: #bebebe;">product description</h6>
+                                    <!-- <h5 style="font-size: 24px;">產品類別</h5>
+                                    <h6 style="color: #bebebe;">product description</h6> -->
+                                    <div style="display:inline-block;background:url('assets/images/product/title.svg') no-repeat center;background-size:cover;">
+                                        <h5 style="opacity:0;letter-spacing: 13px;font-size: 20px;">產品類別</h5>    
+                                    </div><div style="height:5px;"></div>
+                                    <div style="display:inline-block;background:url('assets/images/product/tit_eng.svg') no-repeat center;background-size:cover;">
+                                        <h6 style="opacity:0;letter-spacing: 6px;font-size: 12px;">product description</h6>
+                                    </div>
                                 </div>
                                 <ul class="widget-category vue_dropLeft">
                                     <li class="" :class="{ active: isActive }" @click="activeLink($event)">
