@@ -54,7 +54,7 @@ p {
   .container-fluid .menuzord-menu ul.dropdown > li {
     font-size: 14px; }
     .container-fluid .menuzord-menu ul.dropdown > li > a {
-      padding: 0 20px; } }
+      padding: 0 30px; } }
 
 .container-fluid .logo-brand {
   font-weight: normal;
@@ -163,7 +163,7 @@ p {
     display: inline-block;
     margin: 0;
     position: relative;
-    font-size: 13px;
+    font-size: 14px;
     color: #A67F60; }
   #footer .social-link {
     clear: both;
@@ -497,11 +497,11 @@ p {
   transform: translate(-50%, 0); }
 
 .about_area .about_content_area h4 {
-  font-size: 22px; }
+  font-size: 26px; }
 
 .about_area .about_content_area p {
-  line-height: 2;
-  font-size: 17px; }
+  line-height: 1.875;
+  font-size: 16px; }
 
 .team_area:before {
   content: "";
@@ -625,7 +625,7 @@ p {
 
 .portfolio-with-title.blog-m .portfolio-item .portfolio-title .date {
   letter-spacing: 3px;
-  font-size: 16px;
+  font-size: 14px;
   color: #A29E9F; }
 
 .portfolio-with-title.blog-m .portfolio-item:nth-child(odd) .portfolio-title h4 {
@@ -830,20 +830,18 @@ p {
   border-top: 3px solid #906842;
   transform: translate(-50%, 0); }
 
-.portfolio-filter {
-  font-family: "標楷體"; }
-  .portfolio-filter li {
-    margin: 0 10px;
-    line-height: 1; }
-    .portfolio-filter li a {
-      margin: 0;
-      font-size: 21px; }
-    .portfolio-filter li.active:before, .portfolio-filter li.active:after {
-      margin: 0 10px; }
-    .portfolio-filter li.active:before {
-      content: "["; }
-    .portfolio-filter li.active:after {
-      content: "]"; }
+.portfolio-filter li {
+  margin: 0 10px;
+  line-height: 1; }
+  .portfolio-filter li a {
+    margin: 0;
+    font-size: 21px; }
+  .portfolio-filter li.active:before, .portfolio-filter li.active:after {
+    margin: 0 10px; }
+  .portfolio-filter li.active:before {
+    content: "["; }
+  .portfolio-filter li.active:after {
+    content: "]"; }
 
 .class_video {
   margin-bottom: 100px;
@@ -1157,11 +1155,11 @@ p {
     border-bottom: 3px solid #F7E5D7; }
 
 .category_area .product-title h5 {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: normal; }
 
 .category_area .product-price {
-  font-size: 14px; }
+  font-size: 16px; }
   .category_area .product-price .o_price,
   .category_area .product-price .s_price {
     letter-spacing: 3px; }
@@ -1262,6 +1260,9 @@ p {
     padding: 12px 30px;
     letter-spacing: 5px; }
 
+.product_area .normal-tabs h5 {
+  font-size: 16px; }
+
 .product_area:before {
   content: "";
   position: absolute;
@@ -1283,3 +1284,9 @@ p {
   -webkit-line-clamp: 1;
   word-wrap: break-word;
   word-break: break-all; }
+
+h3 {
+  font-size: 26px; }
+
+h5 {
+  font-size: 16px; }

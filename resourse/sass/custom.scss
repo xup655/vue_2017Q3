@@ -74,7 +74,7 @@ p {
         > li {
           font-size: 14px;
           > a {
-            padding: 0 20px;
+            padding: 0 30px;
           }
         }
       }
@@ -223,7 +223,7 @@ p {
     display: inline-block;
     margin: 0;
     position: relative;
-    font-size: 13px;
+    font-size: 14px;
     color: #A67F60;
   }
   .social-link {
@@ -677,11 +677,11 @@ p {
       transform: translate(-50%, 0);
     }
     h4 {
-      font-size: 22px;
+      font-size: 26px;
     }
     p {
-      line-height: 2;
-      font-size: 17px;
+      line-height: 1.875;
+      font-size: 16px;
     }
   }
 }
@@ -854,7 +854,7 @@ p {
       // }
       .date {
         letter-spacing: 3px;
-        font-size: 16px;
+        font-size: 14px;
         color: #A29E9F;
       }
     }
@@ -1136,7 +1136,7 @@ p {
 
 // class list
 .portfolio-filter {
-  font-family: "標楷體";
+  // font-family: "標楷體";
   li {
     margin: 0 10px;
     line-height: 1;
@@ -1577,12 +1577,12 @@ p {
   }
   .product-title {
     h5 {
-      font-size: 18px;
+      font-size: 25px;
       font-weight: normal;
     }
   }
   .product-price {
-    font-size: 14px;
+    font-size: 16px;
     .o_price,
     .s_price {
       + .o_price,
@@ -1723,6 +1723,9 @@ p {
         letter-spacing: 5px;
       }
     }
+    h5 {
+      font-size: 16px;
+    }
   }
   &:before {
     content: "";
@@ -1762,4 +1765,10 @@ p {
 	-webkit-line-clamp: 1;
 	word-wrap: break-word;
 	word-break: break-all;
+}
+h3 {
+  font-size: 26px;
+}
+h5 {
+  font-size: 16px;
 }
