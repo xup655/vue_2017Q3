@@ -515,63 +515,28 @@
         </section>
         <!--body content end-->
 
-        <div id="floatRightBox">
+        <!-- 側邊浮動選單 html start -->
+        <div id="floatRightBox" class="visible-md visible-lg">
             <div class="item itemNum01">
-                <img src="https://www.fadrogroup.com.tw/images/licenseFloat01.png">
+                <div><i>1</i><span>STEP 1</span>全修班內容</div>
             </div>
             <div class="item itemNum02">
-                <img src="https://www.fadrogroup.com.tw/images/licenseFloat02.png">
+                 <div><i>2</i><span>STEP 2</span>終生密集課程</div>
             </div>
             <div class="item itemNum03">
-                <img src="https://www.fadrogroup.com.tw/images/licenseFloat03.png">
+                 <div><i>3</i><span>STEP 3</span>實際指導</div>
             </div>
             <div class="item itemNum04">
-                <img src="https://www.fadrogroup.com.tw/images/licenseFloat04.png">
+                 <div><i>4</i><span>STEP 4</span>教學包含</div>
             </div>
             <div class="item itemNum05">
-                <img src="https://www.fadrogroup.com.tw/images/licenseFloat05.png">
+                 <div><i>5</i><span>STEP 5</span>課後輔導規劃</div>
             </div>
             <div class="item itemNum06">
-                <img src="https://www.fadrogroup.com.tw/images/licenseFloat06.png">
+                 <div><i>6</i><span>STEP 6</span>紋繡證照</div>
             </div>
         </div>
-        <style>
-        #floatRightBox {
-            position: fixed;
-            right: 0;
-            bottom: 15%;
-            z-index: 9;
-            text-align: right;
-            text-align: -webkit-right;
-            text-align: -moz-right;
-            text-align: -o-right;
-            text-align: -ms-right;
-        }
-        #floatRightBox .item {
-            position: relative;
-            margin: 2px 0;
-            width: 60px;
-            overflow: hidden;
-            text-align: right;
-            text-align: -webkit-right;
-            text-align: -moz-right;
-            text-align: -o-right;
-            text-align: -ms-right;
-            cursor: pointer;
-        }
-        #floatRightBox .item:hover,
-        #floatRightBox .item.active {
-            animation: openmenu .4s linear 1 forwards;
-            -webkit-animation: openmenu .4s linear 1 forwards;
-            -moz-nimation: openmenu .4s linear 1 forwards;
-            -ms-animation: openmenu .4s linear 1 forwards;
-        }
-        @keyframes openmenu {
-            0% {width: 60px}
-            100% {width: 100%}
-        }
-
-        </style>
+        <!-- 側邊浮動選單 html end -->
         
         <!--footer start 1-->
         <footer id="footer">
@@ -673,7 +638,8 @@
     </script>
     <!-- endDEMO -->
 
-    
+
+    <!-- 側邊浮動選單 JS start -->
     <script>
         $(function() {
             var s2 = $('#step2'),
@@ -681,30 +647,47 @@
                 s4 = $('#step4'),
                 s5 = $('#step5'),
                 s6 = $('#step6');
+            var body = $("html, body");
+            $('#floatRightBox .item').on('click', function(){
+                var pos = $(this).attr('class').split('itemNum0', 2).splice(1);
+                if( pos == 1) {
+                    body.animate({scrollTop: 0}, 800)
+                }
+                else {
+                    body.animate({
+                        scrollTop: $('#step' + pos).offset().top - 100
+                    }, 800)
+                }
+            });
+            function init() {
+                $('#floatRightBox .item').removeClass('active');
+            }
             $(window).scroll(function() {
                 var win_top = $(window).scrollTop();
-                if( win_top > s6.offset().top ) {
-                    $('#floatRightBox .item').removeClass('active');
+                if( win_top > s6.offset().top - 105 ) {
+                    init();
                     $('.itemNum06').addClass('active');
-                } else if(win_top > s5.offset().top ) {
-                    $('#floatRightBox .item').removeClass('active');
+                } else if(win_top > s5.offset().top - 105 ) {
+                    init();
                     $('.itemNum05').addClass('active');
-                } else if(win_top > s4.offset().top ) {
-                    $('#floatRightBox .item').removeClass('active');
+                } else if(win_top > s4.offset().top - 105 ) {
+                    init();
                     $('.itemNum04').addClass('active');
-                } else if(win_top > s3.offset().top ) {
-                    $('#floatRightBox .item').removeClass('active');
+                } else if(win_top > s3.offset().top - 105 ) {
+                    init();
                     $('.itemNum03').addClass('active');
-                } else if(win_top > s2.offset().top ) {
-                    $('#floatRightBox .item').removeClass('active');
+                } else if(win_top > s2.offset().top - 105 ) {
+                    init();
                     $('.itemNum02').addClass('active');
-                } else {
-                    $('#floatRightBox .item').removeClass('active');
+                } else if(win_top > 105 ) {
+                    init();
                     $('.itemNum01').addClass('active');
                 }
             });
         });
     </script>
+    <!-- 側邊浮動選單 JS end -->
+    
 </body>
 
 </html>

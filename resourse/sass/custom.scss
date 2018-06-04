@@ -1477,6 +1477,79 @@ p {
 .img_shadow {
   box-shadow: 1px 1px 5px rgba(0,0,0,.3);
 }
+#floatRightBox {
+  position: fixed;
+  right: 0;
+  bottom: 15%;
+  z-index: 9;
+  width: 205px;
+  text-align: right;
+  text-align: -webkit-right;
+  text-align: -moz-right;
+  text-align: -o-right;
+  text-align: -ms-right;
+  .item {
+    position: relative;
+    margin: 5px 0;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    font-family: '微軟正黑體';
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover,
+    &.active {
+      animation: openmenu .5s linear 1 forwards;
+      -webkit-animation: openmenu .5s linear 1 forwards;
+      -moz-nimation: openmenu .5s linear 1 forwards;
+      -ms-animation: openmenu .5s linear 1 forwards;
+      i {
+        display: none;
+      }
+    }
+    > div {
+      padding: 15px 10px;
+      line-height: 30px;
+      white-space: nowrap;
+      > span {
+        margin-right: 5px;
+        font-size: 20px;
+      }
+      > i {
+        margin-right: 100px;
+        padding: 0 15px;
+        font-style: normal;
+        font-size: 24px;
+      }
+    }
+  }
+  .itemNum01 {
+    background: #dfa487;
+  }
+  .itemNum02 {
+      background: #d09682;
+  }
+  .itemNum03 {
+      background: #c28f7f;
+  }
+  .itemNum04 {
+      background: #ce8167;
+  }
+  .itemNum05 {
+      background: #c67b67;
+  }
+  .itemNum06 {
+      background: #b96e5f;
+  }
+  @keyframes openmenu {
+    0% {width: 60px}
+    100% {width: 100%}
+  }
+}
 
 // categoery
 .category_area {
